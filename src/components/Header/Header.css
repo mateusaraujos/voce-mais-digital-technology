@@ -4,7 +4,6 @@ header {
   left: 0;
   width: 100%;
   background-color: #edebe7;
-  font-weight: 600;
   user-select: none;
 }
 
@@ -40,8 +39,6 @@ nav ul {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  list-style-type: none;
-  padding-left: 0;
 }
 
 a {

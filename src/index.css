@@ -1,9 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;0,900;1,400;1,600;1,800;1,900&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
 }
