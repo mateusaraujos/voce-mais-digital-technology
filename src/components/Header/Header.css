@@ -19,7 +19,7 @@ header {
   margin: 0 auto;
 }
 
-nav {
+header nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -31,7 +31,7 @@ nav {
   width: auto;
 }
 
-nav ul {
+header nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

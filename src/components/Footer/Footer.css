@@ -2,19 +2,66 @@ footer {
   background-color: #edebe7;
   width: 100%;
   user-select: none;
-  min-height: 20rem;
+  padding: 1.5rem 0;
 }
 
-.container {
-    display: flex;
+.center-footer {
+  line-height: 2rem;
   max-width: 80rem;
-  margin: 0 auto;
+  margin: 1.5rem auto;
 }
 
-.escala-5 {
-    height: 5.5rem;
+footer nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.escala-6 {
+  height: 6rem;
 }
 
 .cursos-pad {
-    padding-left: 1rem;
+  padding-left: 1rem;
+}
+
+.icon {
+  height: 1.8rem;
+  width: auto;
+  margin-right: -1rem;
+}
+
+footer .social {
+  display: flex;
+  flex-direction: column;
+}
+
+.social li {
+  line-height: 1.9rem;
+}
+
+footer .address {
+  padding-left: 0.1rem;
+}
+
+footer address {
+  line-height: 1rem;
+  margin-top: 1.5rem;
+}
+
+footer .copy {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.by {
+  color: grey;
+}
+
+.by a {
+  text-decoration: underline;
+  color: grey;
+  padding: 0;
+  margin: 0;
 }
