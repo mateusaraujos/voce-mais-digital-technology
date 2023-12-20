@@ -15,14 +15,14 @@ header {
 }
 
 .center-header {
-  max-width: 80rem;
+  max-width: 60rem;
   margin: 0 auto;
 }
 
 header nav {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 

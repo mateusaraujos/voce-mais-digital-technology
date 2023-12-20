@@ -1,12 +1,13 @@
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import MapaLocal from "./components/MapaLocal/MapaLocal";
 
 function App() {
   return (
     <div>
       <Header />
       <main>
-        <h1>Hello</h1>
+        <MapaLocal />
       </main>
       <Footer />
     </div>

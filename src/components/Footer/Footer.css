@@ -7,14 +7,14 @@ footer {
 
 .center-footer {
   line-height: 2rem;
-  max-width: 80rem;
+  max-width: 60rem;
   margin: 1.5rem auto;
 }
 
 footer nav {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 

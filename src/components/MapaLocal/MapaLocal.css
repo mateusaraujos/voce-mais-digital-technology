@@ -1,0 +1,59 @@
+section {
+  width: 100%;
+  background-color: #edebe7;
+  padding: 1rem 0;
+}
+
+.center-section {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.section-mapa {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mapa-tamanho {
+  width: 30rem;
+}
+
+.mapa {
+  width: 100%;
+  height: auto;
+}
+
+.ajuste-perto {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+section h2 {
+  line-height: 2.8rem;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.thin {
+  font-weight: 600;
+}
+
+.ponto-local {
+  height: 4rem;
+  width: auto;
+}
+
+.endereco {
+  display: flex;
+  align-items: center;
+  margin-left: -0.8rem;
+}
+
+.endereco p {
+  margin-left: 0;
+  font-size: 0.8rem;
+}
