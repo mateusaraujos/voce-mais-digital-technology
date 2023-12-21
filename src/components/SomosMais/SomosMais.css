@@ -1,4 +1,4 @@
-.section-two {
+#section-two {
   background-color: #3fa63b;
   color: #edebe7;
   padding: 2rem;
@@ -11,7 +11,7 @@
   justify-content: center;
 }
 
-.section-two h2 {
+#section-two h2 {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 800;

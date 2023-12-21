@@ -13,13 +13,13 @@ export default function Header() {
           </a>
           <ul>
             <li>
-              <a href="/cursos">Cursos</a>
+              <a href="#section-one">Cursos</a>
             </li>
             <li>
-              <a href="/quem-somos">Quem somos</a>
+              <a href="#section-two">Quem somos</a>
             </li>
             <li>
-              <a href="/quero-ser">Quero ser +digital</a>
+              <a href="#section-four">Quero ser +digital</a>
             </li>
           </ul>
           <a className="portal" href="#">

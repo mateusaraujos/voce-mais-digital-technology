@@ -3,7 +3,7 @@ import "./SomosMais.css";
 
 export default function SomosMais() {
   return (
-    <section className="section-two">
+    <section id="section-two">
       <h2>
         <span className="thin">Somos a</span> você+digital
       </h2>
