@@ -1,6 +1,8 @@
 import imgLogo from "../../assets/img/logo.png";
-import imgInsta from "../../assets/img/items/insta.png";
-import imgWhats from "../../assets/img/items/whats.png";
+import Links from "../Links";
+import SocialLinks from "../SocialLinks";
+import { TIPOS_CURSOS } from "../../data/data";
+import { SOCIAL_LINKS } from "../../data/SOCIAL_LINKS";
 import "./Footer.css";
 
 export default function Footer() {
@@ -18,45 +20,16 @@ export default function Footer() {
           <div>
             <ul>
               <li className="cursos-pad">Cursos:</li>
-              <li>
-                <a href="#">Informática básica e avançada</a>
-              </li>
-              <li>
-                <a href="#">Manutenção em Hardware</a>
-              </li>
-              <li>
-                <a href="#">Evolução Profissional</a>
-              </li>
+              {TIPOS_CURSOS.map((curso) => (
+                <Links key={curso.texto} {...curso} />
+              ))}
             </ul>
           </div>
           <div className="social">
             <ul>
-              <li>
-                <a
-                  href="https://www.instagram.com/vocemaisdigital_/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    className="icon"
-                    src={imgInsta}
-                    alt="instagram"
-                    align="left"
-                  />
-                  @vocemaisdigital_
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    className="icon"
-                    src={imgWhats}
-                    alt="WhatsApp"
-                    align="left"
-                  />
-                  <span data-phone="(99) 9999-9999">(99) 9999-9999</span>
-                </a>
-              </li>
+              {SOCIAL_LINKS.map((social) => (
+                <SocialLinks key={social.alt} {...social} />
+              ))}
             </ul>
             <div className="address">
               <p>

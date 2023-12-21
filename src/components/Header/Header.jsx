@@ -1,6 +1,6 @@
 import imgLogo from "../../assets/img/logo.png";
-import HeaderLink from "../HeaderLink";
-import { HEADER_LINKS } from "../../data";
+import Links from "../Links";
+import { HEADER_LINKS } from "../../data/data";
 import "./Header.css";
 
 export default function Header() {
@@ -14,8 +14,8 @@ export default function Header() {
             <img className="imgLogo" src={imgLogo} alt="Você mais digital" />
           </a>
           <ul>
-            {HEADER_LINKS.map((links) => (
-              <HeaderLink key={links.texto} {...links} />
+            {HEADER_LINKS.map((link) => (
+              <Links key={link.texto} {...link} />
             ))}
           </ul>
           <a className="portal" href="#">
