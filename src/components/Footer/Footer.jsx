@@ -2,7 +2,7 @@ import imgLogo from "../../assets/img/logo.png";
 import Links from "../Links";
 import SocialLinks from "../SocialLinks";
 import { TIPOS_CURSOS } from "../../data/data";
-import { SOCIAL_LINKS } from "../../data/SOCIAL_LINKS";
+import { SOCIAL_LINKS } from "../../data/EspecialData";
 import "./Footer.css";
 
 export default function Footer() {

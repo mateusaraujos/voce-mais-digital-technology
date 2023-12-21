@@ -1,4 +1,6 @@
 import imgVideo from "../../assets/img/video.png";
+import TextoMais from "../TextoMais";
+import { TEXTO_MAIS_DIGITAL } from "../../data/EspecialData";
 import "./SomosMais.css";
 
 export default function SomosMais() {
@@ -13,27 +15,9 @@ export default function SomosMais() {
             <img className="video" src={imgVideo} alt="Vídeo" />
           </div>
           <div className="texto">
-            <p>
-              Na <strong>Você+Digital Technology</strong>, nossa paixão é
-              desbravar o mundo tecnológico e tornar a educação acessível para
-              todos. Nascemos da convicção de que a tecnologia é uma ferramenta
-              poderosa para transformar vidas e impulsionar o futuro.
-            </p>
-            <p>
-              Nosa missão é oferecer cursos práticos e especializados que
-              capacitam estudantes e profissionais a dominar habilidades
-              essenciais no universo digital.
-            </p>
-            <p>
-              Nós valorizamos a excelência, a criatividade e a experiência do
-              aprendizado. Acreditamos que cada passo na jornada tecnológica é
-              uma oportunidade para o crescimento.
-            </p>
-            <p>
-              Junte-se a nós e mergulhe em um ambiente de aprendizado inovador,
-              onde a educação se concentra com a tecnologia, e cada conquista é
-              um passo adiante para um futuro brilhante.
-            </p>
+            {TEXTO_MAIS_DIGITAL.map((paragrafo) => (
+              <TextoMais key={paragrafo.id} {...paragrafo} />
+            ))}
           </div>
         </div>
       </div>
