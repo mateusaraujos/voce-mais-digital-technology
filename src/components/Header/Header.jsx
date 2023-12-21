@@ -1,4 +1,6 @@
 import imgLogo from "../../assets/img/logo.png";
+import HeaderLink from "../HeaderLink";
+import { HEADER_LINKS } from "../../data";
 import "./Header.css";
 
 export default function Header() {
@@ -12,15 +14,9 @@ export default function Header() {
             <img className="imgLogo" src={imgLogo} alt="Você mais digital" />
           </a>
           <ul>
-            <li>
-              <a href="#section-one">Cursos</a>
-            </li>
-            <li>
-              <a href="#section-two">Quem somos</a>
-            </li>
-            <li>
-              <a href="#section-four">Quero ser +digital</a>
-            </li>
+            {HEADER_LINKS.map((links) => (
+              <HeaderLink key={links.texto} {...links} />
+            ))}
           </ul>
           <a className="portal" href="#">
             Portal do Aluno
