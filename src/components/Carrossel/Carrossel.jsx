@@ -19,11 +19,12 @@ export default function Carrossel({ images }) {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 800,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
+    pauseOnHover: false,
     beforeChange: (current, next) => setCurrentSlide(next),
   };
 
@@ -42,7 +43,7 @@ export default function Carrossel({ images }) {
                 <img
                   className="banner"
                   src={image}
-                  alt={`Slide ${index + 1}`}
+                  alt={`Imagem Carrossel ${index + 1}`}
                 />
               </div>
             </div>
