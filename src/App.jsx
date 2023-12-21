@@ -1,5 +1,6 @@
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import SomosMais from "./components/SomosMais/SomosMais";
 import MapaLocal from "./components/MapaLocal/MapaLocal";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div>
       <Header />
       <main>
+        <SomosMais />
         <MapaLocal />
       </main>
       <Footer />

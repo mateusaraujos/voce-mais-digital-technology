@@ -5,8 +5,8 @@ import "./MapaLocal.css";
 
 export default function MapaLocal() {
   return (
-    <section>
-      <div className="center-section">
+    <section className="section-three">
+      <div className="center-section-three">
         <div className="section-mapa">
           <div className="mapa-tamanho">
             <img className="mapa" src={imgMapa} alt="Mapa" />
