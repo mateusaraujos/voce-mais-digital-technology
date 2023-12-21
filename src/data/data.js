@@ -34,21 +34,15 @@ export const TIPOS_CURSOS = [
 
 export const BANNERS = [
   {
-    id: "b-1",
     imagem: imgBanner1,
-    titulo: "Evolução",
-    descricao: "A evolução do aprendizado digital ao seu alcance.",
+    legenda: "A evolução do aprendizado digital ao seu alcance.",
   },
   {
-    id: "b-2",
     imagem: imgBanner2,
-    titulo: "Aprenda",
-    descricao: "Aprenda, explore, evolua.",
+    legenda: "Aprenda, explore, evolua.",
   },
   {
-    id: "b-3",
     imagem: imgBanner3,
-    titulo: "Prepare-se",
-    descricao: "Prepare-se para o amanhã com nossos cursos.",
+    legenda: "Prepare-se para o amanhã com nossos cursos.",
   },
 ];

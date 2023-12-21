@@ -1,0 +1,51 @@
+/* Carrossel.css */
+.section-zero {
+  width: 100%;
+  background-image: url("../../assets/img/pattern1.png");
+  background-size: 10%;
+  background-position: top 80% right 100%;
+  background-repeat: repeat;
+}
+
+.no-p {
+  max-width: 80rem !important;
+  padding: 0 !important;
+  margin: 0 auto;
+}
+
+.section-carrossel {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide.hidden {
+  display: none;
+}
+
+.tamanho-banner {
+  max-width: 60rem;
+  margin-bottom: -0.5rem;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+}
