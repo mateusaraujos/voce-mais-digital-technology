@@ -1,0 +1,28 @@
+article {
+  width: 100%;
+  background-color: #00ff83;
+  padding: 0.5rem;
+  user-select: none;
+}
+
+.center-article {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.article-compromisso {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.selo {
+  height: 4.5rem;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+article p {
+    font-size: 1.2rem;
+}

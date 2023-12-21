@@ -1,5 +1,6 @@
 import imgMapa from "../../assets/img/mapa.png";
 import imgLocal from "../../assets/img/items/local.png";
+import SeloCompromisso from "../SeloCompromisso/SeloCompromisso";
 import "./MapaLocal.css";
 
 export default function MapaLocal() {
@@ -26,6 +27,7 @@ export default function MapaLocal() {
           </div>
         </div>
       </div>
+      <SeloCompromisso />
     </section>
   );
 }
