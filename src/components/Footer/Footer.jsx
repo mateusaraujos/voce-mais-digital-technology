@@ -32,13 +32,11 @@ export default function Footer() {
               ))}
             </ul>
             <div className="address">
-              <p>
-                <address>
-                  Rua Domingos Correia, 76,
-                  <br />
-                  Centro, Arapiraca/AL
-                </address>
-              </p>
+              <address>
+                Rua Domingos Correia, 76,
+                <br />
+                Centro, Arapiraca/AL
+              </address>
             </div>
           </div>
         </nav>
