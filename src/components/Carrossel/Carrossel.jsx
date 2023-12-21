@@ -1,42 +1,58 @@
 import { useState, useEffect } from "react";
-import { BANNERS } from "../../data/data";
+import PropTypes from "prop-types";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./Carrossel.css";
 
-export default function Carrossel() {
-  const [slideAtual, setSlideAtual] = useState(0);
+export default function Carrossel({ images }) {
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
-    const intervaloId = setInterval(() => {
-      setSlideAtual((slideAnterior) => (slideAnterior + 1) % BANNERS.length);
+    const intervalId = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
     }, 4000);
 
-    return () => clearInterval(intervaloId);
-  }, []);
+    return () => clearInterval(intervalId);
+  }, [images]);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    beforeChange: (current, next) => setCurrentSlide(next),
+  };
 
   return (
     <section className="section-zero">
-      <div className="no-p">
-        <div className="section-carrossel">
-          <div className="carousel">
-            {BANNERS.map((slide, index) => (
-              <div
-                key={index}
-                className={`slide ${
-                  index === slideAtual ? "active" : "hidden"
-                }`}
-              >
-                <div className="tamanho-banner">
-                  <img
-                    className="banner"
-                    src={slide.imagem}
-                    alt={slide.legenda}
-                  />
-                </div>
+      <Slider {...settings}>
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`carousel-slide ${
+              index === currentSlide ? "active" : ""
+            }`}
+          >
+            <div className="section-carrossel">
+              <div className="tamanho-banner">
+                <img
+                  className="banner"
+                  src={image}
+                  alt={`Slide ${index + 1}`}
+                />
               </div>
-            ))}
+            </div>
           </div>
-        </div>
-      </div>
+        ))}
+      </Slider>
     </section>
   );
 }
+
+Carrossel.propTypes = {
+  images: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
