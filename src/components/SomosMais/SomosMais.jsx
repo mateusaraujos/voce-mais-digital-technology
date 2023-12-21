@@ -7,7 +7,7 @@ export default function SomosMais() {
       <h2>
         <span className="thin">Somos a</span> você+digital
       </h2>
-      <div className="center-section-two">
+      <div className="center-section">
         <div className="section-mais">
           <div className="video-tamanho">
             <img className="video" src={imgVideo} alt="Vídeo" />

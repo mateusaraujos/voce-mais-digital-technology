@@ -30,3 +30,9 @@ ul {
   list-style-type: none;
   padding-left: 0;
 }
+
+.center-section {
+  max-width: 60rem;
+  padding: 1rem 0;
+  margin: 0 auto;
+}

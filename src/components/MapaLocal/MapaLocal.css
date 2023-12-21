@@ -3,12 +3,6 @@
   background-color: #edebe7;
 }
 
-.center-section-three {
-  max-width: 60rem;
-  padding: 1rem 0;
-  margin: 0 auto;
-}
-
 .section-mapa {
   display: flex;
   flex-wrap: wrap;
@@ -17,7 +11,7 @@
 }
 
 .mapa-tamanho {
-  width: 28rem;
+  width: 25rem;
 }
 
 .mapa {
