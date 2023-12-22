@@ -5,16 +5,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Carrossel.css";
 
-export default function Carrossel({ images }) {
-  const [currentSlide, setCurrentSlide] = useState(0);
+export default function Carrossel({ imagens }) {
+  const [slideAtual, setSlideAtual] = useState(0);
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
+    const intervaloId = setInterval(() => {
+      setSlideAtual((slideAnterior) => (slideAnterior + 1) % imagens.length);
     }, 4000);
 
-    return () => clearInterval(intervalId);
-  }, [images]);
+    return () => clearInterval(intervaloId);
+  }, [imagens]);
 
   const settings = {
     dots: true,
@@ -25,18 +25,16 @@ export default function Carrossel({ images }) {
     autoplay: true,
     autoplaySpeed: 4000,
     pauseOnHover: false,
-    beforeChange: (current, next) => setCurrentSlide(next),
+    beforeChange: (_current, next) => setSlideAtual(next),
   };
 
   return (
     <section className="section-zero">
       <Slider {...settings}>
-        {images.map((image, index) => (
+        {imagens.map((image, index) => (
           <div
             key={index}
-            className={`carousel-slide ${
-              index === currentSlide ? "active" : ""
-            }`}
+            className={`carousel-slide ${index === slideAtual ? "active" : ""}`}
           >
             <div className="section-carrossel">
               <div className="tamanho-banner">
@@ -55,5 +53,5 @@ export default function Carrossel({ images }) {
 }
 
 Carrossel.propTypes = {
-  images: PropTypes.arrayOf(PropTypes.string).isRequired,
+  imagens: PropTypes.arrayOf(PropTypes.string).isRequired,
 };

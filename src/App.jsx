@@ -10,7 +10,7 @@ function App() {
     <div>
       <Header />
       <main>
-        <Carrossel images={BANNERS} />
+        <Carrossel imagens={BANNERS} />
         <SomosMais />
         <MapaLocal />
       </main>

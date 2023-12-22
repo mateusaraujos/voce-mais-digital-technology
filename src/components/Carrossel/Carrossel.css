@@ -1,16 +1,23 @@
 .section-zero {
+  position: relative;
   user-select: none;
   width: 100%;
   background-image: url("../../assets/img/pattern1.png");
   background-size: 10%;
   background-repeat: repeat;
   margin: 0;
+  padding: 5rem 0;
 }
 
-.carousel-slide,
-.active {
-  margin: 0;
-  padding: 0;
+.section-zero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #edebe7db;
+  backdrop-filter: blur(8px);
 }
 
 .section-carrossel {
@@ -28,6 +35,7 @@
 
 .banner {
   width: 100%;
+  border-radius: 2rem;
   height: auto;
-  margin-bottom: -0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
