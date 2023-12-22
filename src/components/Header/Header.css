@@ -52,6 +52,7 @@ a {
   background-color: #3fa63b;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 .portal:hover {
