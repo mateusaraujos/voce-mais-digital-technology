@@ -2,6 +2,7 @@ article {
   width: 100%;
   background-color: #00ff83;
   padding: 0.5rem;
+  margin-top: 1rem;
   user-select: none;
 }
 
