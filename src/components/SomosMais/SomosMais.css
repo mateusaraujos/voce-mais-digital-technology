@@ -3,6 +3,7 @@
   background-color: #3fa63b;
   color: #edebe7;
   padding: 5.5rem 0 5rem 0;
+  user-select: none;
 }
 
 .section-mais {
