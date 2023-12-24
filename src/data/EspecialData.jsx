@@ -1,18 +1,36 @@
 import imgInsta from "../assets/img/items/insta.png";
 import imgWhats from "../assets/img/items/whats.png";
 
-export const SOCIAL_LINKS = [
+import cursoExemplo1 from "../assets/img/cursos/informatica.png";
+import cursoExemplo2 from "../assets/img/cursos/manutencao.png";
+import cursoExemplo3 from "../assets/img/cursos/evolucao.png";
+
+export const EXEMPLOS_CURSOS = [
   {
-    children: "@vocemaisdigital_",
-    url: "https://www.instagram.com/vocemaisdigital_/",
-    image: imgInsta,
-    alt: "Instagram",
+    imagem: cursoExemplo1,
+    alt: "Informática",
+    legenda: (
+      <>
+        Informática Básica
+        <br /> e Avançada
+      </>
+    ),
   },
   {
-    children: <span data-phone="(99) 9999-9999">(99) 9999-9999</span>,
-    url: "#",
-    image: imgWhats,
-    alt: "WhatsApp",
+    imagem: cursoExemplo2,
+    alt: "Manutenção",
+    legenda: (
+      <>
+        Manutenção
+        <br /> em Hardware <br />
+        (Notebook/PC)
+      </>
+    ),
+  },
+  {
+    imagem: cursoExemplo3,
+    alt: "Evolução",
+    legenda: "Evolução Profissional",
   },
 ];
 
@@ -57,5 +75,20 @@ export const TEXTO_MAIS_DIGITAL = [
         adiante para um futuro brilhante.
       </>
     ),
+  },
+];
+
+export const SOCIAL_LINKS = [
+  {
+    children: "@vocemaisdigital_",
+    url: "https://www.instagram.com/vocemaisdigital_/",
+    image: imgInsta,
+    alt: "Instagram",
+  },
+  {
+    children: <span data-phone="(99) 9999-9999">(99) 9999-9999</span>,
+    url: "#",
+    image: imgWhats,
+    alt: "WhatsApp",
   },
 ];

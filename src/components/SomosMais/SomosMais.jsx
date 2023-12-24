@@ -6,10 +6,10 @@ import "./SomosMais.css";
 export default function SomosMais() {
   return (
     <section id="section-two">
-      <h2>
-        <span className="thin">Somos a</span> você+digital
-      </h2>
       <div className="center-section">
+        <h2>
+          <span className="thin">Somos a</span> você+digital
+        </h2>
         <div className="section-mais">
           <div className="video-tamanho">
             <img className="video" src={imgVideo} alt="Vídeo" />
