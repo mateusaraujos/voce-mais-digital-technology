@@ -3,7 +3,9 @@ import PropTypes from "prop-types";
 export default function Links({ url, texto }) {
   return (
     <li>
-      <a href={url}>{texto}</a>
+      <a className="links-header" href={url}>
+        {texto}
+      </a>
     </li>
   );
 }

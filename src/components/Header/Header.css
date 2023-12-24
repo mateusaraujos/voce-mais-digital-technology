@@ -60,9 +60,6 @@ a {
 }
 
 .portal:hover {
-  background-color: #0d0d0d;
-}
-
-.portal::before {
-  background-color: #3fa63b;
+  background-color: #edebe7;
+  color: #3fa63b;
 }
