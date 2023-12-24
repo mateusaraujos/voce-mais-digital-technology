@@ -38,21 +38,25 @@
 }
 
 .para-cursos {
-    margin-top: 3rem;
-    text-align: center;
+  margin-top: 3rem;
+  text-align: center;
 }
 
 .para-cursos .link-cursos {
-    background-color: #3fa63b;
-    color: #edebe7;
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 0.4rem 1rem;
-    border-radius: 8px;
-    transition: all 0.2s ease-in-out;
-    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  background-color: #3fa63b;
+  color: #edebe7;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
 }
 
 .para-cursos .link-cursos:hover {
-    background-color: #0d0d0d;
-  }
+  background-color: #0d0d0d;
+}
+
+.para-cursos .link-cursos::before {
+  position: relative;
+}

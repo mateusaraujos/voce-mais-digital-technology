@@ -10,7 +10,7 @@ export default function Header() {
       <div className="verde-escuro"></div>
       <div className="center-header">
         <nav>
-          <a href="/">
+          <a className="link-logo" href="/">
             <img className="imgLogo" src={imgLogo} alt="Você mais digital" />
           </a>
           <ul>

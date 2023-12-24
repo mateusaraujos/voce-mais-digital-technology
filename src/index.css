@@ -32,7 +32,25 @@ html {
 }
 
 a {
+  text-decoration: none;
+  position: relative;
   color: #0d0d0d;
+  overflow: hidden; /* Oculta o overflow do pseudo-elemento */
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Altura da borda inferior */
+  background-color: #3fa63b;
+  transition: width 0.2s ease-out;
+}
+
+a:hover::before {
+  width: 100%;
 }
 
 ul {

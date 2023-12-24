@@ -55,13 +55,21 @@ footer .copy {
   margin: 4rem 0;
 }
 
-.by {
-  color: grey;
+.by,
+.by a {
+  color: rgba(128, 128, 128, 0.5);
 }
 
 .by a {
-  text-decoration: underline;
-  color: grey;
   padding: 0;
   margin: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.by a:hover {
+  color: #282828;
+}
+
+.by a::before {
+  background-color: #282828;
 }

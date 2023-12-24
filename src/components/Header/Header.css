@@ -20,6 +20,10 @@ header {
   padding: 1rem 0;
 }
 
+.link-logo:before {
+  position: relative;
+}
+
 header nav {
   display: flex;
   align-items: center;
@@ -57,4 +61,8 @@ a {
 
 .portal:hover {
   background-color: #0d0d0d;
+}
+
+.portal::before {
+  background-color: #3fa63b;
 }
