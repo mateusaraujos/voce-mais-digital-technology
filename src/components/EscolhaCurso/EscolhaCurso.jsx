@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ExemplosCursos from "../ExemplosCursos";
 import { EXEMPLOS_CURSOS } from "../../data/EspecialData";
 import "./EscolhaCurso.css";
@@ -15,9 +16,9 @@ export default function EscolhaCurso() {
           </div>
         </div>
         <div className="para-cursos">
-          <a className="link-cursos" href="#">
-            Quero ser +digital
-          </a>
+          <Link className="link-cursos" to="/catalogo-de-cursos">
+            Catálogo de Cursos
+          </Link>
         </div>
       </div>
     </section>
