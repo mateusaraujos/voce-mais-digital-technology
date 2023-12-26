@@ -16,6 +16,7 @@ export const HEADER_LINKS = [
     texto: "Quero ser +digital",
   },
 ];
+
 export const BANNERS = [imgBanner1, imgBanner2, imgBanner3];
 
 export const TIPOS_CURSOS = [

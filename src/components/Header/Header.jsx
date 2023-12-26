@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import imgLogo from "../../assets/img/logo.png";
 import Links from "../Links";
 import { HEADER_LINKS } from "../../data/data";
@@ -18,9 +19,9 @@ export default function Header() {
               <Links key={link.texto} {...link} />
             ))}
           </ul>
-          <a className="portal" href="#">
+          <Link className="portal" to="/portal-do-aluno">
             Portal do Aluno
-          </a>
+          </Link>
         </nav>
       </div>
     </header>

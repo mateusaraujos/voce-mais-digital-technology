@@ -6,6 +6,9 @@ export default function AppRouter() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      {/*
+      <Route path="/portal-do-aluno" element={<PortalDoAluno />} />
+      */}
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
