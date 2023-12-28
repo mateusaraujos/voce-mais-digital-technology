@@ -16,8 +16,8 @@ export default function Carrossel({ imagens }) {
     return () => clearInterval(intervaloId);
   }, [imagens]);
 
-  const settings = {
-    dots: true,
+  const montagem = {
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -30,8 +30,8 @@ export default function Carrossel({ imagens }) {
 
   return (
     <section className="section-zero">
-      <Slider {...settings}>
-        {imagens.map((image, index) => (
+      <Slider {...montagem}>
+        {imagens.map((imagem, index) => (
           <div
             key={index}
             className={`carousel-slide ${index === slideAtual ? "active" : ""}`}
@@ -40,7 +40,7 @@ export default function Carrossel({ imagens }) {
               <div className="tamanho-banner">
                 <img
                   className="banner"
-                  src={image}
+                  src={imagem}
                   alt={`Imagem Carrossel ${index + 1}`}
                 />
               </div>

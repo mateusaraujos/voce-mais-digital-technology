@@ -82,13 +82,13 @@ export const SOCIAL_LINKS = [
   {
     children: "@vocemaisdigital_",
     url: "https://www.instagram.com/vocemaisdigital_/",
-    image: imgInsta,
+    imagem: imgInsta,
     alt: "Instagram",
   },
   {
     children: <span data-phone="(99) 9999-9999">(99) 9999-9999</span>,
     url: "#",
-    image: imgWhats,
+    imagem: imgWhats,
     alt: "WhatsApp",
   },
 ];
