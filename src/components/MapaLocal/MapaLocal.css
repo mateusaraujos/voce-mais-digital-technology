@@ -9,11 +9,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .mapa-tamanho {
-  width: 25rem;
+  width: 30rem;
 }
 
 .mapa {

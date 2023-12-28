@@ -10,7 +10,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 #section-two h2 {
@@ -21,7 +21,7 @@
 }
 
 .video-tamanho {
-  width: 19rem;
+  width: 20rem;
 }
 
 .video {
@@ -35,14 +35,15 @@
 
 .texto-abaixo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  width: 46rem !important;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 100% !important;
 }
 
 .texto p {
-  text-align: justify;
+  text-align: left;
   font-size: 1rem;
   margin: 1.2rem;
 }

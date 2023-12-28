@@ -17,7 +17,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: normal;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .section-venhaser .left-side {
@@ -25,7 +25,6 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
-  margin: 1rem;
 }
 
 #section-four h3 {

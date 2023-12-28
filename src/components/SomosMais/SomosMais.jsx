@@ -14,13 +14,13 @@ export default function SomosMais() {
           <span className="thin">Somos a</span> você+digital
         </h2>
         <div className="section-mais">
-          <div className="video-tamanho">
-            <img className="video" src={imgVideo} alt="Vídeo" />
-          </div>
           <div className="texto">
             {TEXTO_PRIMEIRA_PARTE.map((paragrafo) => (
               <TextoMais key={paragrafo.id} {...paragrafo} />
             ))}
+          </div>
+          <div className="video-tamanho">
+            <img className="video" src={imgVideo} alt="Vídeo" />
           </div>
           <div className="texto texto-abaixo">
             {TEXTO_SEGUNDA_PARTE.map((paragrafo) => (
