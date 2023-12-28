@@ -16,8 +16,16 @@
 .section-venhaser {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: normal;
+  justify-content: center;
+}
+
+.section-venhaser .left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-around;
+  margin: 1rem;
 }
 
 #section-four h3 {

@@ -1,3 +1,4 @@
+import Form from "../Form/Form";
 import "./VenhaSerMais.css";
 
 export default function VenhaSerMais() {
@@ -8,7 +9,7 @@ export default function VenhaSerMais() {
           <span className="thin">Venha ser</span> +digital
         </h2>
         <div className="section-venhaser">
-          <div>
+          <div className="left-side">
             <h3>
               Preencha os campos do formulário
               <br /> para que nossa equipe entre em
@@ -21,7 +22,9 @@ export default function VenhaSerMais() {
               <br /> começa aqui!
             </h4>
           </div>
-          <div>FORMULÁRIO</div>
+          <div className="formulario">
+            <Form />
+          </div>
         </div>
       </div>
     </section>

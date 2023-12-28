@@ -1,0 +1,68 @@
+form {
+  width: 31rem;
+  background-color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+}
+
+.elemento-form input:focus,
+.elemento-form select:focus {
+  border-color: #00ff83; /* Altere para a cor desejada */
+  box-shadow: 0 0 5px #00ff83;
+  outline: none;
+}
+
+.grid-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 1rem;
+}
+
+.div-1,
+.div-4,
+.div-7,
+button {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+form label {
+  color: #0d0d0d;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+form input,
+form select {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  width: 100%;
+  height: 2rem;
+  padding: 0.5rem;
+  border: solid 1.5px #00ff83;
+}
+
+form select {
+  padding: 0 0.3rem !important;
+  background-color: white;
+}
+
+form button {
+  cursor: pointer;
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 600;
+  margin: 0.8rem 0 0 0;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  background-color: #3fa63b;
+  color: white;
+  border: solid 1px #3fa63b;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+form button:hover {
+  background-color: white;
+  color: #3fa63b;
+}
