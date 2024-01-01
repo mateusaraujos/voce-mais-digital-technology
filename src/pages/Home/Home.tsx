@@ -9,7 +9,7 @@ import { BANNERS } from "../../data/data";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Header />
       <main>
         <Carrossel imagens={BANNERS} />
@@ -19,6 +19,6 @@ export default function Home() {
         <VenhaSerMais />
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
