@@ -1,8 +1,13 @@
-import imgLogo from "../../assets/img/logo.png";
 import Links from "../Links/Links";
 import SocialLinks from "../SocialLinks";
-import { TIPOS_CURSOS } from "../../data/data";
+
+// Mudar para props.
+import { ToCourse } from "../../types/types";
+import { SOME_COURSES } from "../../constants/constants";
 import { SOCIAL_LINKS } from "../../data/EspecialData";
+
+import imgLogo from "../../assets/img/logo.png";
+
 import "./Footer.css";
 
 export default function Footer() {
@@ -20,8 +25,8 @@ export default function Footer() {
           <div>
             <ul>
               <li className="cursos-pad">Cursos:</li>
-              {TIPOS_CURSOS.map((curso) => (
-                <Links key={curso.texto} {...curso} />
+              {SOME_COURSES.map((course: ToCourse) => (
+                <Links key={course.text} {...course} />
               ))}
             </ul>
           </div>

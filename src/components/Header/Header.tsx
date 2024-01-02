@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 
 import Links from "../Links/Links";
 import LinksProps from "../Links/LinksProps";
-import { HEADER_LINKS } from "../../data/data";
+
+import { HEADER_LINKS } from "../../constants/constants";
 
 import imgLogo from "../../assets/img/logo.png";
 
@@ -20,7 +21,7 @@ export default function Header() {
           </a>
           <ul>
             {HEADER_LINKS.map((link: LinksProps) => (
-              <Links key={link.texto} {...link} />
+              <Links key={link.text} {...link} />
             ))}
           </ul>
           <Link className="portal" to="/portal-do-aluno">

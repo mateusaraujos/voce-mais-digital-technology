@@ -1,28 +1,33 @@
-import { useState } from "react";
-import { FORM_FIELDS } from "../../data/data";
+import { useState, ChangeEvent, FormEvent } from "react";
+
+import { FormValues } from "../../types/types";
+import { FORM_FIELDS } from "../../constants/constants";
+
 import "./Form.css";
 
 export default function Form() {
-  const [valoresForm, setValoresForm] = useState({});
+  const [formValues, setFormValues] = useState<FormValues>({});
 
-  const handleSubmit = (evento) => {
-    evento.preventDefault();
+  const handleSubmit = (event: FormEvent) => {
+    event.preventDefault();
     // Lógica para lidar com os dados do formulário
     // Enviá-los para um servidor
-    console.log("Valores do formulário: ", valoresForm); // Teste valores
+    console.log("Valores do formulário: ", formValues); // Teste valores
   };
 
-  const handleInputChange = (evento) => {
-    const { name, value } = evento.target;
-    setValoresForm((valorAnterior) => ({
-      ...valorAnterior,
+  const handleInputChange = (
+    event: ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
+    const { name, value } = event.target;
+    setFormValues((prevValue) => ({
+      ...prevValue,
       [name]: value,
     }));
   };
 
   return (
     <form onSubmit={handleSubmit} className="grid-form">
-      {FORM_FIELDS.map((campo, index) => (
+      {FORM_FIELDS.map((field, index) => (
         <div
           className={`elemento-form ${
             index === 0
@@ -43,38 +48,39 @@ export default function Form() {
           }`}
           key={index}
         >
-          <label htmlFor={campo.label}>
-            {campo.label}
-            {campo.required && <span>*</span>}
+          <label htmlFor={field.label}>
+            {field.label}
+            {field.required && <span>*</span>}
           </label>
-          {campo.type === "select" ? (
+          {field.type === "select" ? (
             <select
-              name={campo.name}
-              id={campo.label}
-              value={valoresForm[campo.name] || ""}
+              name={field.name}
+              id={field.label}
+              value={formValues[field.name] || ""}
               onChange={handleInputChange}
               autoComplete="on"
-              required={campo.required}
+              required={field.required}
             >
               <option value="" disabled>
-                {campo.placeholder}
+                {field.placeholder}
               </option>
-              {campo.choices.map((escolha, escolhaIndex) => (
-                <option key={escolhaIndex} value={escolha.value}>
-                  {escolha.label}
-                </option>
-              ))}
+              {field.choices &&
+                field.choices.map((escolha, escolhaIndex) => (
+                  <option key={escolhaIndex} value={escolha.value}>
+                    {escolha.label}
+                  </option>
+                ))}
             </select>
           ) : (
             <input
-              type={campo.type}
-              name={campo.name}
-              id={campo.label}
-              placeholder={campo.placeholder}
-              value={valoresForm[campo.name] || ""}
+              type={field.type}
+              name={field.name}
+              id={field.label}
+              placeholder={field.placeholder}
+              value={formValues[field.name] || ""}
               onChange={handleInputChange}
               autoComplete="on"
-              required={campo.required}
+              required={field.required}
             />
           )}
         </div>
