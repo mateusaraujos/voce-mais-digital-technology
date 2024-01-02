@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
+
 import ExemplosCursos from "../ExemplosCursos";
-import { EXEMPLOS_CURSOS } from "../../data/EspecialData";
+
+import { CourseExample } from "../../types/types";
+import { COURSE_EXAMPLES } from "../../constants/specialConstants";
+
 import "./EscolhaCurso.css";
 
 export default function EscolhaCurso() {
@@ -10,8 +14,8 @@ export default function EscolhaCurso() {
         <h2>Escolha seu curso</h2>
         <div className="section-cursos">
           <div className="cursos-exemplos">
-            {EXEMPLOS_CURSOS.map((exemplos) => (
-              <ExemplosCursos key={exemplos.alt} {...exemplos} />
+            {COURSE_EXAMPLES.map((examples: CourseExample) => (
+              <ExemplosCursos key={examples.alt} {...examples} />
             ))}
           </div>
         </div>

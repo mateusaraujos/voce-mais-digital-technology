@@ -1,16 +1,14 @@
-import PropTypes from "prop-types";
+import { CourseExample } from "../types/types";
 
-export default function ExemplosCursos({ imagem, alt, legenda }) {
+export default function ExemplosCursos({
+  image,
+  alt,
+  subtitle,
+}: CourseExample) {
   return (
     <figure>
-      <img className="img-exemplos" src={imagem} alt={alt} />
-      <figcaption>{legenda}</figcaption>
+      <img className="img-exemplos" src={image} alt={alt} />
+      <figcaption>{subtitle}</figcaption>
     </figure>
   );
 }
-
-ExemplosCursos.propTypes = {
-  imagem: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
-  legenda: PropTypes.node.isRequired,
-};

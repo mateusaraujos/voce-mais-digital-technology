@@ -1,9 +1,5 @@
-import PropTypes from "prop-types";
+import { TextMaisDigital } from "../types/types";
 
-export default function TextoMais({ texto }) {
-  return <p>{texto}</p>;
+export default function TextoMais({ text }: TextMaisDigital) {
+  return <p>{text}</p>;
 }
-
-TextoMais.propTypes = {
-  texto: PropTypes.node.isRequired,
-};

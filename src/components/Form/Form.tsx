@@ -1,12 +1,12 @@
 import { useState, ChangeEvent, FormEvent } from "react";
 
-import { FormValues } from "../../types/types";
+import { FormValue } from "../../types/types";
 import { FORM_FIELDS } from "../../constants/constants";
 
 import "./Form.css";
 
 export default function Form() {
-  const [formValues, setFormValues] = useState<FormValues>({});
+  const [formValues, setFormValues] = useState<FormValue>({});
 
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();

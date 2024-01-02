@@ -2,6 +2,16 @@ export type BannerType = string;
 export type TextType = string;
 export type UrlType = string;
 
+export interface CarouselProps {
+  images: BannerType[];
+}
+
+export interface CourseExample {
+  image: string;
+  alt: string;
+  subtitle: React.ReactNode;
+}
+
 export interface FormFieldChoice {
   value: string;
   label: string;
@@ -16,13 +26,25 @@ export interface FormField {
   required: boolean;
 }
 
-export interface FormValues {
+export interface FormValue {
   [key: string]: string;
 }
 
 export interface HeaderLink {
   url: UrlType;
   text: TextType;
+}
+
+export interface SocialLink {
+  children: React.ReactNode;
+  url: string;
+  image: string;
+  alt: string;
+}
+
+export interface TextMaisDigital {
+  id: string;
+  text: React.ReactNode;
 }
 
 export interface ToCourse {

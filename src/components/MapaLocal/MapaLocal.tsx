@@ -1,6 +1,8 @@
+import SeloCompromisso from "../SeloCompromisso/SeloCompromisso";
+
 import imgMapa from "../../assets/img/mapa.png";
 import imgLocal from "../../assets/img/items/local.png";
-import SeloCompromisso from "../SeloCompromisso/SeloCompromisso";
+
 import "./MapaLocal.css";
 
 export default function MapaLocal() {

@@ -5,6 +5,7 @@ import SomosMais from "../../components/SomosMais/SomosMais";
 import MapaLocal from "../../components/MapaLocal/MapaLocal";
 import Footer from "../../components/Footer/Footer";
 import VenhaSerMais from "../../components/VenhaSerMais/VenhaSerMais";
+
 import { BANNERS } from "../../constants/constants";
 
 export default function Home() {

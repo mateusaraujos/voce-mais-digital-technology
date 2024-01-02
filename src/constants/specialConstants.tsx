@@ -1,15 +1,16 @@
+import { CourseExample, SocialLink, TextMaisDigital } from "../types/types";
+
 import imgInsta from "../assets/img/items/insta.png";
 import imgWhats from "../assets/img/items/whats.png";
-
 import cursoExemplo1 from "../assets/img/cursos/informatica.png";
 import cursoExemplo2 from "../assets/img/cursos/manutencao.png";
 import cursoExemplo3 from "../assets/img/cursos/evolucao.png";
 
-export const EXEMPLOS_CURSOS = [
+export const COURSE_EXAMPLES: CourseExample[] = [
   {
-    imagem: cursoExemplo1,
+    image: cursoExemplo1,
     alt: "Informática",
-    legenda: (
+    subtitle: (
       <>
         Informática Básica
         <br /> e Avançada
@@ -17,9 +18,9 @@ export const EXEMPLOS_CURSOS = [
     ),
   },
   {
-    imagem: cursoExemplo2,
+    image: cursoExemplo2,
     alt: "Manutenção",
-    legenda: (
+    subtitle: (
       <>
         Manutenção
         <br /> em Hardware <br />
@@ -28,16 +29,16 @@ export const EXEMPLOS_CURSOS = [
     ),
   },
   {
-    imagem: cursoExemplo3,
+    image: cursoExemplo3,
     alt: "Evolução",
-    legenda: "Evolução Profissional",
+    subtitle: "Evolução Profissional",
   },
 ];
 
-export const TEXTO_MAIS_DIGITAL = [
+export const TEXTS_MAIS_DIGITAL: TextMaisDigital[] = [
   {
     id: "p-1",
-    texto: (
+    text: (
       <>
         Na <strong>Você+Digital Technology</strong>, nossa paixão é desbravar o
         mundo tecnológico e tornar a educação acessível para todos. Nascemos da
@@ -48,7 +49,7 @@ export const TEXTO_MAIS_DIGITAL = [
   },
   {
     id: "p-2",
-    texto: (
+    text: (
       <>
         Nossa missão é oferecer cursos práticos e especializados que capacitam
         estudantes e profissionais a dominar habilidades essenciais no universo
@@ -58,7 +59,7 @@ export const TEXTO_MAIS_DIGITAL = [
   },
   {
     id: "p-3",
-    texto: (
+    text: (
       <>
         Nós valorizamos a excelência, a criatividade e a experiência do
         aprendizado. Acreditamos que cada passo na jornada tecnológica é uma
@@ -68,7 +69,7 @@ export const TEXTO_MAIS_DIGITAL = [
   },
   {
     id: "p-4",
-    texto: (
+    text: (
       <>
         Junte-se a nós e mergulhe em um ambiente de aprendizado inovador, onde a
         educação se concentra com a tecnologia, e cada conquista é um passo
@@ -78,17 +79,17 @@ export const TEXTO_MAIS_DIGITAL = [
   },
 ];
 
-export const SOCIAL_LINKS = [
+export const SOCIAL_LINKS: SocialLink[] = [
   {
     children: "@vocemaisdigital_",
     url: "https://www.instagram.com/vocemaisdigital_/",
-    imagem: imgInsta,
+    image: imgInsta,
     alt: "Instagram",
   },
   {
     children: <span data-phone="(99) 9999-9999">(99) 9999-9999</span>,
     url: "#",
-    imagem: imgWhats,
+    image: imgWhats,
     alt: "WhatsApp",
   },
 ];

@@ -1,10 +1,9 @@
-import Links from "../Links/Links";
+import Links from "../Links";
 import SocialLinks from "../SocialLinks";
 
-// Mudar para props.
-import { ToCourse } from "../../types/types";
+import { SocialLink, ToCourse } from "../../types/types";
 import { SOME_COURSES } from "../../constants/constants";
-import { SOCIAL_LINKS } from "../../data/EspecialData";
+import { SOCIAL_LINKS } from "../../constants/specialConstants";
 
 import imgLogo from "../../assets/img/logo.png";
 
@@ -32,7 +31,7 @@ export default function Footer() {
           </div>
           <div className="social">
             <ul>
-              {SOCIAL_LINKS.map((social) => (
+              {SOCIAL_LINKS.map((social: SocialLink) => (
                 <SocialLinks key={social.alt} {...social} />
               ))}
             </ul>

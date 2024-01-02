@@ -4,11 +4,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import CarroselProps from "./CarroselProps";
+import { CarouselProps } from "../../types/types";
 
 import "./Carrossel.css";
 
-export default function Carrossel({ images }: CarroselProps) {
+export default function Carrossel({ images }: CarouselProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
