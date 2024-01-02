@@ -1,5 +1,5 @@
 import imgLogo from "../../assets/img/logo.png";
-import Links from "../Links";
+import Links from "../Links/Links";
 import SocialLinks from "../SocialLinks";
 import { TIPOS_CURSOS } from "../../data/data";
 import { SOCIAL_LINKS } from "../../data/EspecialData";

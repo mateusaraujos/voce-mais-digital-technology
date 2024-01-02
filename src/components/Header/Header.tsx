@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
-import Links from "../Links";
-import LinksProps from "../../types/LinksProps";
+import Links from "../Links/Links";
+import LinksProps from "../Links/LinksProps";
 import { HEADER_LINKS } from "../../data/data";
 
 import imgLogo from "../../assets/img/logo.png";

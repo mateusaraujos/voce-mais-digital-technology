@@ -1,4 +1,4 @@
-import LinksProps from "../types/LinksProps";
+import LinksProps from "./LinksProps";
 
 export default function Links({ url, texto }: LinksProps) {
   return (
@@ -9,3 +9,4 @@ export default function Links({ url, texto }: LinksProps) {
     </li>
   );
 }
+  
