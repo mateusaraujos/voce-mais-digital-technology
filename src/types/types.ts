@@ -45,6 +45,7 @@ export interface SocialLink {
 export interface TextMaisDigital {
   id: string;
   text: React.ReactNode;
+  className?: string;
 }
 
 export interface ToCourse {
