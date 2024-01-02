@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
-import imgLogo from "../../assets/img/logo.png";
+
 import Links from "../Links";
+import LinksProps from "../../types/LinksProps";
 import { HEADER_LINKS } from "../../data/data";
+
+import imgLogo from "../../assets/img/logo.png";
+
 import "./Header.css";
 
 export default function Header() {
@@ -15,7 +19,7 @@ export default function Header() {
             <img className="imgLogo" src={imgLogo} alt="Você mais digital" />
           </a>
           <ul>
-            {HEADER_LINKS.map((link) => (
+            {HEADER_LINKS.map((link: LinksProps) => (
               <Links key={link.texto} {...link} />
             ))}
           </ul>
