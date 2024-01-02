@@ -9,7 +9,7 @@ export default function App() {
   useEffect(() => {
     setTimeout(() => {
       setCarregando(false);
-    }, 2000);
+    }, 1500);
   }, []);
 
   if (carregando) {
