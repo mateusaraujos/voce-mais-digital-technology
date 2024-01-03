@@ -9,7 +9,7 @@ export default function VenhaSerMais() {
         <h2>
           <span className="thin">Venha ser</span> +digital
         </h2>
-        <div className="section-venhaser">
+        <div className="section-comebe">
           <div className="left-side">
             <h3>
               Preencha os campos do formulário
@@ -23,7 +23,7 @@ export default function VenhaSerMais() {
               <br /> começa aqui!
             </h4>
           </div>
-          <div className="formulario">
+          <div className="form-card">
             <Form />
           </div>
         </div>
