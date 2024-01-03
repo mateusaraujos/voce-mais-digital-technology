@@ -12,6 +12,10 @@ export interface CourseExample {
   subtitle: React.ReactNode;
 }
 
+export interface CustomDots {
+  dots: React.ReactNode;
+}
+
 export interface FormFieldChoice {
   value: string;
   label: string;

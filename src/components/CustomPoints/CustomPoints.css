@@ -1,0 +1,53 @@
+.dots-container {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  right: 50%;
+  z-index: 2;
+}
+
+.list-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-dots {
+  margin: 0.5rem 1rem;
+}
+
+.div-dots li {
+  list-style-type: none;
+  background-color: #edebe7;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: relative;
+  border-radius: 50%;
+  transition: all 0.6s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.div-dots li button {
+  position: absolute;
+  font-size: 0 !important;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  outline-color: #00ff83;
+  border-radius: 50%;
+  transition: all 0.6s ease-in-out;
+}
+
+.div-dots .slick-active {
+  background-color: #0d0d0d;
+}
+
+.div-dots .slick-active button {
+  background-color: #0d0d0d;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.8);
+}
