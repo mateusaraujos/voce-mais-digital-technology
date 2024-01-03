@@ -1,4 +1,4 @@
-import { HeaderLink } from "../types/types";
+import { HeaderLink } from "../types/appTypes";
 
 export default function Links({ url, text }: HeaderLink) {
   return (

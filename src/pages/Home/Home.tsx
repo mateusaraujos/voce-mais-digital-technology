@@ -6,7 +6,7 @@ import MapaLocal from "../../components/MapaLocal/MapaLocal";
 import Footer from "../../components/Footer/Footer";
 import VenhaSerMais from "../../components/VenhaSerMais/VenhaSerMais";
 
-import { BANNERS } from "../../constants/constants";
+import { BANNERS } from "../../constants/appConstants";
 
 export default function Home() {
   return (

@@ -1,4 +1,4 @@
-import { CourseExample, SocialLink, TextMaisDigital } from "../types/types";
+import { CourseExample, SocialLink, TextMaisDigital } from "../types/appTypes";
 
 import imgInsta from "../assets/img/items/insta.png";
 import imgWhats from "../assets/img/items/whats.png";

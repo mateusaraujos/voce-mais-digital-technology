@@ -1,4 +1,4 @@
-import { BannerType, FormField, HeaderLink, ToCourse } from "../types/types";
+import { BannerType, FormField, HeaderLink, ToCourse } from "../types/appTypes";
 
 import imgBanner1 from "../assets/img/banners/banner-1.png";
 import imgBanner2 from "../assets/img/banners/banner-2.png";

@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { CarouselProps } from "../../types/types";
+import { CarouselProps } from "../../types/appTypes";
 
 import "./Carrossel.css";
 

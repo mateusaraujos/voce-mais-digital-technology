@@ -1,8 +1,8 @@
 import Links from "../Links";
 import SocialLinks from "../SocialLinks";
 
-import { SocialLink, ToCourse } from "../../types/types";
-import { SOME_COURSES } from "../../constants/constants";
+import { SocialLink, ToCourse } from "../../types/appTypes";
+import { SOME_COURSES } from "../../constants/appConstants";
 import { SOCIAL_LINKS } from "../../constants/specialConstants";
 
 import imgLogo from "../../assets/img/logo.png";

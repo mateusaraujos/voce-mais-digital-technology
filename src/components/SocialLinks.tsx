@@ -1,4 +1,4 @@
-import { SocialLink } from "../types/types";
+import { SocialLink } from "../types/appTypes";
 
 export default function SocialLinks({ children, url, image, alt }: SocialLink) {
   return (

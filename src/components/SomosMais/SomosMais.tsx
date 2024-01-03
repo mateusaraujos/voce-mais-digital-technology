@@ -1,6 +1,6 @@
 import TextoMais from "../TextoMais";
 
-import { TextMaisDigital } from "../../types/types";
+import { TextMaisDigital } from "../../types/appTypes";
 import { TEXTS_MAIS_DIGITAL } from "../../constants/specialConstants";
 
 import imgVideo from "../../assets/img/video.png";

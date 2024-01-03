@@ -1,4 +1,4 @@
-import { CourseExample } from "../types/types";
+import { CourseExample } from "../types/appTypes";
 
 export default function ExemplosCursos({
   image,

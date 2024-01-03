@@ -1,7 +1,7 @@
 import { useState, ChangeEvent, FormEvent } from "react";
 
-import { FormValue } from "../../types/types";
-import { FORM_FIELDS } from "../../constants/constants";
+import { FormValue } from "../../types/appTypes";
+import { FORM_FIELDS } from "../../constants/appConstants";
 
 import "./Form.css";
 

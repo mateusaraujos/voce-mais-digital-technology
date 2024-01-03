@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import ExemplosCursos from "../ExemplosCursos";
 
-import { CourseExample } from "../../types/types";
+import { CourseExample } from "../../types/appTypes";
 import { COURSE_EXAMPLES } from "../../constants/specialConstants";
 
 import "./EscolhaCurso.css";

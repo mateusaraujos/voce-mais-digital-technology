@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 import Links from "../Links";
 
-import { HeaderLink } from "../../types/types";
-import { HEADER_LINKS } from "../../constants/constants";
+import { HeaderLink } from "../../types/appTypes";
+import { HEADER_LINKS } from "../../constants/appConstants";
 
 import imgLogo from "../../assets/img/logo.png";
 
