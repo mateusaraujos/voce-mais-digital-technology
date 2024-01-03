@@ -7,7 +7,7 @@ export default function ExemplosCursos({
 }: CourseExample) {
   return (
     <figure>
-      <img className="img-exemplos" src={image} alt={alt} />
+      <img className="img-examples" src={image} alt={alt} />
       <figcaption>{subtitle}</figcaption>
     </figure>
   );

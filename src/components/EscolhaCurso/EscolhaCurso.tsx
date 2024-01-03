@@ -12,15 +12,15 @@ export default function EscolhaCurso() {
     <section id="section-one">
       <div className="center-section">
         <h2>Escolha seu curso</h2>
-        <div className="section-cursos">
-          <div className="cursos-exemplos">
+        <div className="section-courses">
+          <div className="course-examples">
             {COURSE_EXAMPLES.map((examples: CourseExample) => (
               <ExemplosCursos key={examples.alt} {...examples} />
             ))}
           </div>
         </div>
-        <div className="para-cursos">
-          <Link className="link-cursos" to="/catalogo-de-cursos">
+        <div className="to-courses">
+          <Link className="courses-link" to="/catalogo-de-cursos">
             Catálogo de Cursos
           </Link>
         </div>

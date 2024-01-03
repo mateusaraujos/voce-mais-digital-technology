@@ -12,38 +12,38 @@
   margin-bottom: 1rem;
 }
 
-.section-cursos {
+.section-courses {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.cursos-exemplos {
+.course-examples {
   display: flex;
   align-items: normal;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.cursos-exemplos .img-exemplos {
+.course-examples .img-examples {
   width: 16rem;
   height: auto;
   margin: 0.3rem;
 }
 
-.cursos-exemplos figcaption {
+.course-examples figcaption {
   margin-top: 0.5rem;
   font-size: 1.3rem;
   font-weight: 600;
   text-align: center;
 }
 
-.para-cursos {
+.to-courses {
   margin-top: 3rem;
   text-align: center;
 }
 
-.para-cursos .link-cursos {
+.to-courses .courses-link {
   background-color: #3fa63b;
   color: #edebe7;
   font-size: 2rem;
@@ -54,12 +54,12 @@
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
 }
 
-.para-cursos .link-cursos:hover {
+.to-courses .courses-link:hover {
   background-color: #edebe7;
   color: #3fa63b;
   border: 1px solid #3fa63b;
 }
 
-.para-cursos .link-cursos::before {
+.to-courses .courses-link::before {
   position: relative;
 }
