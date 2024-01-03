@@ -16,14 +16,14 @@ export default function Footer() {
         <nav>
           <div>
             <img
-              className="imgLogo escala-6"
+              className="imgLogo scale-6"
               src={imgLogo}
               alt="Você mais digital"
             />
           </div>
           <div>
             <ul>
-              <li className="cursos-pad">Cursos:</li>
+              <li className="courses-pad">Cursos:</li>
               {SOME_COURSES.map((course: ToCourse) => (
                 <Links key={course.text} {...course} />
               ))}
