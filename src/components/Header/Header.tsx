@@ -12,11 +12,11 @@ import "./Header.css";
 export default function Header() {
   return (
     <header>
-      <div className="verde-claro"></div>
-      <div className="verde-escuro"></div>
+      <div className="light-green"></div>
+      <div className="dark-green"></div>
       <div className="center-header">
         <nav>
-          <a className="link-logo" href="/">
+          <a className="logo-link" href="/">
             <img className="imgLogo" src={imgLogo} alt="Você mais digital" />
           </a>
           <ul>

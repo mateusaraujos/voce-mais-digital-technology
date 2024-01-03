@@ -4,12 +4,12 @@ header {
   user-select: none;
 }
 
-.verde-claro {
+.light-green {
   height: 0.35rem;
   background-color: #00ff83 !important;
 }
 
-.verde-escuro {
+.dark-green {
   height: 0.35rem;
   background-color: #3fa63b !important;
 }
@@ -20,7 +20,7 @@ header {
   padding: 0.2rem 0;
 }
 
-.link-logo:before {
+.logo-link:before {
   position: relative;
 }
 
