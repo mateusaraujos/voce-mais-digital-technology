@@ -26,10 +26,10 @@ export default function Form() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="grid-form">
+    <form onSubmit={handleSubmit} className="form-grid">
       {FORM_FIELDS.map((field, index) => (
         <div
-          className={`elemento-form ${
+          className={`form-element ${
             index === 0
               ? "div-1"
               : index === 1

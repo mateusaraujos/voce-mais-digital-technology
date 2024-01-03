@@ -1,21 +1,18 @@
-form {
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 1rem;
   width: 31rem;
   background-color: white;
   padding: 1.5rem 2rem;
   border-radius: 12px;
 }
 
-.elemento-form input:focus,
-.elemento-form select:focus {
+.form-element input:focus,
+.form-element select:focus {
   border-color: #00ff83; /* Altere para a cor desejada */
   box-shadow: 0 0 5px #00ff83;
   outline: none;
-}
-
-.grid-form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0 1rem;
 }
 
 .div-1,
@@ -26,14 +23,14 @@ button {
   grid-column-end: 3;
 }
 
-form label {
+.form-grid label {
   color: #0d0d0d;
   font-weight: 400;
   font-size: 0.9rem;
 }
 
-form input,
-form select {
+.form-grid input,
+.form-grid select {
   margin: 0.2rem 0;
   font-size: 0.9rem;
   width: 100%;
@@ -42,12 +39,12 @@ form select {
   border: solid 1.5px #00ff83;
 }
 
-form select {
+.form-grid select {
   padding: 0 0.3rem !important;
   background-color: white;
 }
 
-form button {
+.form-grid button {
   cursor: pointer;
   font-family: "Raleway", sans-serif !important;
   font-weight: 600;
@@ -62,7 +59,7 @@ form button {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-form button:hover {
+.form-grid button:hover {
   background-color: white;
   color: #3fa63b;
 }
