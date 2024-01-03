@@ -5,23 +5,23 @@
   user-select: none;
 }
 
-.section-mapa {
+.section-map {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
 }
 
-.mapa-tamanho {
+.map-size {
   width: 30rem;
 }
 
-.mapa {
+.map {
   width: 100%;
   height: auto;
 }
 
-.ajuste-perto {
+.adjust-close {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -38,18 +38,18 @@
   font-weight: 600;
 }
 
-.ponto-local {
-  height: 4rem;
-  width: auto;
-}
-
-.endereco {
+.superscription {
   display: flex;
   align-items: center;
   margin-left: -0.8rem;
 }
 
-.endereco p {
+.superscription .local-point {
+  height: 4rem;
+  width: auto;
+}
+
+.superscription p {
   margin-left: 0;
   font-size: 1rem;
 }

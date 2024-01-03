@@ -9,18 +9,18 @@ export default function MapaLocal() {
   return (
     <section className="section-three">
       <div className="center-section">
-        <div className="section-mapa">
-          <div className="mapa-tamanho">
-            <img className="mapa" src={imgMapa} alt="Mapa" />
+        <div className="section-map">
+          <div className="map-size">
+            <img className="map" src={imgMapa} alt="Mapa" />
           </div>
-          <div className="ajuste-perto">
+          <div className="adjust-close">
             <h2>
               <span className="thin">Estamos</span> <br />
               perto de <br />
               você!
             </h2>
-            <div className="endereco">
-              <img className="ponto-local" src={imgLocal} alt="Ponto Local" />
+            <div className="superscription">
+              <img className="local-point" src={imgLocal} alt="Ponto Local" />
               <p>
                 Rua Domingos Correia, 76,
                 <br /> Centro, Arapiraca/AL
