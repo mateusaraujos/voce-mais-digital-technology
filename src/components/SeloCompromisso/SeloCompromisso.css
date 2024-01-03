@@ -11,19 +11,19 @@ article {
   margin: 0 auto;
 }
 
-.article-compromisso {
+.article-commitment {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
-.selo {
+.article-commitment .stamp {
   height: 4.5rem;
   width: auto;
   margin-right: 0.5rem;
 }
 
-article p {
-    font-size: 1.2rem;
+.article-commitment p {
+  font-size: 1.2rem;
 }
