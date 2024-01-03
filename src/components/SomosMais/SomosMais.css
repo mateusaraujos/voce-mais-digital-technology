@@ -6,7 +6,7 @@
   user-select: none;
 }
 
-.section-mais {
+.section-plus {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -21,7 +21,7 @@
   margin-bottom: 1.3rem;
 }
 
-.video-tamanho {
+.video-size {
   width: 30rem;
 }
 
@@ -30,23 +30,14 @@
   height: auto;
 }
 
-.texto {
+.text {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0 0.5rem;
   grid-auto-flow: row;
 }
 
-.texto-abaixo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  width: 100% !important;
-}
-
-.texto p {
+.text p {
   text-align: left;
   font-size: 1rem;
   margin: 1.2rem;

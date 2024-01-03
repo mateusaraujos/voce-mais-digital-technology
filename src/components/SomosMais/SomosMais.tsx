@@ -14,11 +14,11 @@ export default function SomosMais() {
         <h2>
           <span className="thin">Somos a</span> você+digital
         </h2>
-        <div className="section-mais">
-          <div className="video-tamanho">
+        <div className="section-plus">
+          <div className="video-size">
             <img className="video" src={imgVideo} alt="Vídeo" />
           </div>
-          <div className="texto">
+          <div className="text">
             {TEXTS_MAIS_DIGITAL.map((paragraph: TextMaisDigital, index) => (
               <TextoMais
                 key={paragraph.id}
