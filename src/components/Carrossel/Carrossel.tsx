@@ -28,6 +28,7 @@ export default function Carrossel({ images }: CarouselProps) {
     autoplay: true,
     autoplaySpeed: 4000,
     pauseOnHover: false,
+    arrows: false,
     beforeChange: (_current: number, next: number) => setCurrentSlide(next),
   };
 
