@@ -1,4 +1,4 @@
-import imgSelo from "../../assets/img/items/selo.png";
+import imgSelo from "/icons/selo.png";
 
 import "./SeloCompromisso.css";
 

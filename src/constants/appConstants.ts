@@ -1,8 +1,8 @@
 import { BannerType, FormField, HeaderLink, ToCourse } from "../types/appTypes";
 
-import imgBanner1 from "../assets/img/banners/banner-1.png";
-import imgBanner2 from "../assets/img/banners/banner-2.png";
-import imgBanner3 from "../assets/img/banners/banner-3.png";
+import imgBanner1 from "/img/banners/banner-1.png";
+import imgBanner2 from "/img/banners/banner-2.png";
+import imgBanner3 from "/img/banners/banner-3.png";
 
 export const HEADER_LINKS: HeaderLink[] = [
   { url: "#section-one", text: "Cursos" },

@@ -1,7 +1,7 @@
 import SeloCompromisso from "../SeloCompromisso/SeloCompromisso";
 
 import imgMapa from "../../assets/img/mapa.png";
-import imgLocal from "../../assets/img/items/local.png";
+import imgLocal from "/icons/local.png";
 
 import "./MapaLocal.css";
 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import AppRouter from "./routes/AppRouter";
-import initialLogo from "./assets/img/logo-inicial.png";
+import initialLogo from "/img/logo-inicial.png";
 
 export default function App() {
   const [carregando, setCarregando] = useState(true);

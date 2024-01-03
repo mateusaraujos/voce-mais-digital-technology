@@ -5,7 +5,7 @@ import Links from "../Links";
 import { HeaderLink } from "../../types/appTypes";
 import { HEADER_LINKS } from "../../constants/appConstants";
 
-import imgLogo from "../../assets/img/logo.png";
+import imgLogo from "/img/logo.png";
 
 import "./Header.css";
 

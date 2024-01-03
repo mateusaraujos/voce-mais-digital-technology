@@ -1,10 +1,10 @@
 import { CourseExample, SocialLink, TextMaisDigital } from "../types/appTypes";
 
-import imgInsta from "../assets/img/items/insta.png";
-import imgWhats from "../assets/img/items/whats.png";
-import cursoExemplo1 from "../assets/img/cursos/informatica.png";
-import cursoExemplo2 from "../assets/img/cursos/manutencao.png";
-import cursoExemplo3 from "../assets/img/cursos/evolucao.png";
+import imgInsta from "/icons/insta.png";
+import imgWhats from "/icons/whats.png";
+import cursoExemplo1 from "/img/courses/informatica.png";
+import cursoExemplo2 from "/img/courses/manutencao.png";
+import cursoExemplo3 from "/img/courses/evolucao.png";
 
 export const COURSE_EXAMPLES: CourseExample[] = [
   {
