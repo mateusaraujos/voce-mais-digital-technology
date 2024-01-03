@@ -41,8 +41,8 @@ export default function Carrossel({ images }: CarouselProps) {
               index === currentSlide ? "active" : ""
             }`}
           >
-            <div className="section-carrossel">
-              <div className="tamanho-banner">
+            <div className="section-carousel">
+              <div className="banner-size">
                 <img
                   className="banner"
                   src={image}

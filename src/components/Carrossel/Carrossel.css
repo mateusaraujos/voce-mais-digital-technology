@@ -2,7 +2,7 @@
   position: relative;
   user-select: none;
   width: 100%;
-  background-image: url("../../assets/img/pattern1.png");
+  background-image: url("/img/pattern1.png");
   background-size: 50%;
   background-repeat: repeat;
   margin: 0;
@@ -19,7 +19,7 @@
   backdrop-filter: blur(4px);
 }
 
-.section-carrossel {
+.section-carousel {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +27,7 @@
   margin: 0;
 }
 
-.tamanho-banner {
+.banner-size {
   max-width: 67.5rem;
   margin: 0;
 }
