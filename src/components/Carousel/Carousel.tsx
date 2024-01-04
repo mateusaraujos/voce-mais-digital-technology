@@ -8,9 +8,9 @@ import CustomPoints from "../CustomPoints/CustomPoints";
 
 import { CarouselProps } from "../../types/appTypes";
 
-import "./Carrossel.css";
+import "./Carousel.css";
 
-export default function Carrossel({ images }: CarouselProps) {
+export default function Carousel({ images }: CarouselProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {

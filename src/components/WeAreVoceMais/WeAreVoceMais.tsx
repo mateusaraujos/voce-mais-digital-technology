@@ -1,13 +1,13 @@
-import TextoMais from "../TextoMais";
+import TextVoceMaisDigital from "../TextVoceMaisDigital";
 
 import { TextMaisDigital } from "../../types/appTypes";
 import { TEXTS_MAIS_DIGITAL } from "../../constants/specialConstants";
 
 import imgVideo from "../../assets/img/video.png";
 
-import "./SomosMais.css";
+import "./WeAreVoceMais.css";
 
-export default function SomosMais() {
+export default function WeAreVoceMais() {
   return (
     <section id="section-two">
       <div className="center-section">
@@ -20,7 +20,7 @@ export default function SomosMais() {
           </div>
           <div className="text">
             {TEXTS_MAIS_DIGITAL.map((paragraph: TextMaisDigital, index) => (
-              <TextoMais
+              <TextVoceMaisDigital
                 key={paragraph.id}
                 {...paragraph}
                 className={`text-element ${

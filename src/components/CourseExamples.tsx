@@ -1,6 +1,6 @@
 import { CourseExample } from "../types/appTypes";
 
-export default function ExemplosCursos({
+export default function CourseExamples({
   image,
   alt,
   subtitle,

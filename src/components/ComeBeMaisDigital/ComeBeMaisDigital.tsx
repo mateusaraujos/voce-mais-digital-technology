@@ -1,8 +1,8 @@
 import Form from "../Form/Form";
 
-import "./VenhaSerMais.css";
+import "./ComeBeMaisDigital.css";
 
-export default function VenhaSerMais() {
+export default function ComeBeMaisDigital() {
   return (
     <section id="section-four">
       <div className="center-section">

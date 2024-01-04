@@ -1,10 +1,10 @@
 import Header from "../../components/Header/Header";
-import Carrossel from "../../components/Carrossel/Carrossel";
-import EscolhaCurso from "../../components/EscolhaCurso/EscolhaCurso";
-import SomosMais from "../../components/SomosMais/SomosMais";
-import MapaLocal from "../../components/MapaLocal/MapaLocal";
+import Carousel from "../../components/Carousel/Carousel";
+import ChooseCourse from "../../components/ChooseCourse/ChooseCourse";
+import WeAreVoceMais from "../../components/WeAreVoceMais/WeAreVoceMais";
+import LocationMap from "../../components/LocationMap/LocationMap";
+import ComeBeMaisDigital from "../../components/ComeBeMaisDigital/ComeBeMaisDigital";
 import Footer from "../../components/Footer/Footer";
-import VenhaSerMais from "../../components/VenhaSerMais/VenhaSerMais";
 
 import { BANNERS } from "../../constants/appConstants";
 
@@ -13,11 +13,11 @@ export default function Home() {
     <>
       <Header />
       <main>
-        <Carrossel images={BANNERS} />
-        <EscolhaCurso />
-        <SomosMais />
-        <MapaLocal />
-        <VenhaSerMais />
+        <Carousel images={BANNERS} />
+        <ChooseCourse />
+        <WeAreVoceMais />
+        <LocationMap />
+        <ComeBeMaisDigital />
       </main>
       <Footer />
     </>

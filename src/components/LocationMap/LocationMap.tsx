@@ -1,11 +1,11 @@
-import SeloCompromisso from "../SeloCompromisso/SeloCompromisso";
+import CommitmentSeal from "../CommitmentSeal/CommitmentSeal";
 
 import imgMapa from "../../assets/img/mapa.png";
 import imgLocal from "/icons/local.png";
 
-import "./MapaLocal.css";
+import "./LocationMap.css";
 
-export default function MapaLocal() {
+export default function LocationMap() {
   return (
     <section className="section-three">
       <div className="center-section">
@@ -29,7 +29,7 @@ export default function MapaLocal() {
           </div>
         </div>
       </div>
-      <SeloCompromisso />
+      <CommitmentSeal />
     </section>
   );
 }

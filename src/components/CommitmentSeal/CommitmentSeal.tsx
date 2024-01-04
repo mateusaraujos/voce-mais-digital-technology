@@ -1,8 +1,8 @@
 import imgSelo from "/icons/selo.png";
 
-import "./SeloCompromisso.css";
+import "./CommitmentSeal.css";
 
-export default function SeloCompromisso() {
+export default function CommitmentSeal() {
   return (
     <article>
       <div className="center-article">
