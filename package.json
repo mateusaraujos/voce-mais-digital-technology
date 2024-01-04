@@ -1,13 +1,29 @@
 {
   "name": "voce-mais-digital-technology",
+  "description": "Site da Você + Digital Technology",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.5.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Mateus Araújo Silva",
+    "url": "https://mateusaraujos.dev/"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "vite",
+    "web development"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mateusaraujos/voce-mais-digital-technology"
   },
   "dependencies": {
     "react": "^18.2.0",
