@@ -3,7 +3,7 @@ import TextVoceMaisDigital from "../TextVoceMaisDigital";
 import { TextMaisDigital } from "../../types/appTypes";
 import { TEXTS_MAIS_DIGITAL } from "../../constants/specialConstants";
 
-import imgVideo from "../../assets/img/video.png";
+import imgVideo from "../../resources/assets/images/video.png";
 
 import "./WeAreVoceMais.css";
 

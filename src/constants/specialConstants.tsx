@@ -1,7 +1,7 @@
 import { CourseExample, SocialLink, TextMaisDigital } from "../types/appTypes";
 
-import imgInsta from "/icons/insta.png";
-import imgWhats from "/icons/whats.png";
+import imgInsta from "/img/icons/insta.png";
+import imgWhats from "/img/icons/whats.png";
 import cursoExemplo1 from "/img/courses/informatica.png";
 import cursoExemplo2 from "/img/courses/manutencao.png";
 import cursoExemplo3 from "/img/courses/evolucao.png";

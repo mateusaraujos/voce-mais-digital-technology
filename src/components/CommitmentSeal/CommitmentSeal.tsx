@@ -1,4 +1,4 @@
-import imgSelo from "/icons/selo.png";
+import imgSelo from "/img/icons/selo.png";
 
 import "./CommitmentSeal.css";
 

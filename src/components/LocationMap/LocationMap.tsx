@@ -1,7 +1,7 @@
 import CommitmentSeal from "../CommitmentSeal/CommitmentSeal";
 
-import imgMapa from "../../assets/img/mapa.png";
-import imgLocal from "/icons/local.png";
+import imgMapa from "../../resources/assets/images/mapa.png";
+import imgLocal from "/img/icons/local.png";
 
 import "./LocationMap.css";
 
