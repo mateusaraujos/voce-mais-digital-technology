@@ -61,6 +61,7 @@
   - Adicionar pastas `types/` e `constants/`.
   - Adicionar pasta `public/`.
   - Adicionar `CHANGELOG.md`.
+  - Adicionar `MIT License`.
 
 - Alterações
 
@@ -70,6 +71,7 @@
   - Alterar nomes de estilos CSS para _padrão em English_.
   - Alterar a localização de várias imagens estáticas para a pasta `public/`.
   - Alterar nomes de componentes para _padrão em English_.
+  - Alterar `MIT License`.
 
 - Remoções
 
