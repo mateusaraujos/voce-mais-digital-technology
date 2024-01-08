@@ -60,6 +60,11 @@
   border: 1px solid #3fa63b;
 }
 
+.to-courses .courses-link:focus {
+  border: solid 1px #edebe7;
+  outline: 2px solid #3fa63b;
+}
+
 .to-courses .courses-link::before {
   position: relative;
 }

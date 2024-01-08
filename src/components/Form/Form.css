@@ -10,7 +10,7 @@
 
 .form-element input:focus,
 .form-element select:focus {
-  border-color: #00ff83; /* Altere para a cor desejada */
+  border-color: #00ff83;
   box-shadow: 0 0 5px #00ff83;
   outline: none;
 }
@@ -18,7 +18,7 @@
 .div-1,
 .div-4,
 .div-7,
-button {
+.form-grid button {
   grid-column-start: 1;
   grid-column-end: 3;
 }
@@ -58,8 +58,12 @@ button {
   transition: all 0.2s ease-in-out;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
-
 .form-grid button:hover {
   background-color: white;
   color: #3fa63b;
+}
+
+.form-grid button:focus {
+  border: solid 1px white;
+  outline: 2px solid #3fa63b;
 }

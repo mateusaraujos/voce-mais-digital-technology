@@ -56,6 +56,10 @@ a:hover::before {
   width: 100%;
 }
 
+a:focus {
+  outline: 1.5px solid #3fa63b;
+}
+
 /* Padrão dos links em Header */
 .page-links {
   border: 1px solid #3fa63b;
