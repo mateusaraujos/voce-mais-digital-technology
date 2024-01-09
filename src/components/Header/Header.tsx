@@ -9,9 +9,21 @@ import imgLogo from "/img/logo.png";
 
 import "./Header.css";
 
+import { useTheme } from "styled-components";
+import styled from "styled-components";
+import { CustomTheme } from "../../contexts/ThemeContext";
+
+const StyledHeader = styled.header<{ theme: CustomTheme }>`
+  background-color: ${(props) =>
+    props.theme.mode === "light" ? "#fff" : "#333"};
+  color: ${(props) => (props.theme.mode === "light" ? "#333" : "#fff")};
+`;
+
 export default function Header() {
+  const { theme } = useTheme();
+
   return (
-    <header>
+    <StyledHeader theme={theme}>
       <div className="light-green"></div>
       <div className="dark-green"></div>
       <div className="center-header">
@@ -29,6 +41,6 @@ export default function Header() {
           </Link>
         </nav>
       </div>
-    </header>
+    </StyledHeader>
   );
 }

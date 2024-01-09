@@ -7,10 +7,13 @@ import ComeBeMaisDigital from "../../components/ComeBeMaisDigital/ComeBeMaisDigi
 import Footer from "../../components/Footer/Footer";
 
 import { BANNERS } from "../../constants/appConstants";
+import { ThemeProvider } from "../../contexts/ThemeContext";
+import ThemeToggle from "../../components/ThemeToogle/ThemeToogle";
 
 export default function Home() {
   return (
-    <>
+    <ThemeProvider>
+      <ThemeToggle />
       <Header />
       <main>
         <Carousel images={BANNERS} />
@@ -20,6 +23,6 @@ export default function Home() {
         <ComeBeMaisDigital />
       </main>
       <Footer />
-    </>
+    </ThemeProvider>
   );
 }

@@ -8,6 +8,10 @@
   font-family: "Raleway", sans-serif;
 }
 
+html {
+  background-color: #edebe7;
+}
+
 #root {
   position: fixed;
   top: 0;
