@@ -31,11 +31,6 @@ header nav {
   flex-wrap: wrap;
 }
 
-.imgLogo {
-  height: 4rem;
-  width: auto;
-}
-
 header nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -53,7 +48,7 @@ a {
 .portal {
   padding: 0.2rem 0.8rem;
   color: #edebe7;
-  background-color: #3fa63b;
+  background-color: var(--dark-green);
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);

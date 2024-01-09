@@ -2,7 +2,7 @@
   position: relative;
   user-select: none;
   width: 100%;
-  background-image: url("/img/pattern1.png");
+  background-image: url("../../resources/assets/images/pattern1.png");
   background-size: 50%;
   background-repeat: repeat;
   margin: 0;
