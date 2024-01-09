@@ -1,3 +1,4 @@
+import ThemeProvider from "../../components/ThemeProvider";
 import Header from "../../components/Header/Header";
 import Carousel from "../../components/Carousel/Carousel";
 import ChooseCourse from "../../components/ChooseCourse/ChooseCourse";
@@ -7,7 +8,7 @@ import ComeBeMaisDigital from "../../components/ComeBeMaisDigital/ComeBeMaisDigi
 import Footer from "../../components/Footer/Footer";
 
 import { BANNERS } from "../../constants/appConstants";
-import { ThemeProvider } from "../../contexts/ThemeContext";
+
 import ThemeToggle from "../../components/ThemeToogle/ThemeToogle";
 
 export default function Home() {
