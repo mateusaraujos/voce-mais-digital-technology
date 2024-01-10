@@ -5,7 +5,7 @@ import { SocialLink, ToCourse } from "../../types/appTypes";
 import { SOME_COURSES } from "../../constants/appConstants";
 import { SOCIAL_LINKS } from "../../constants/specialConstants";
 
-import imgLogo from "/img/logo.png";
+import imgLogo from "../../resources/assets/images/logo.png";
 
 import "./Footer.css";
 
