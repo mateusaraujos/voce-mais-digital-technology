@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { ThemeProvider as StyledComponentsThemeProvider } from "styled-components";
 
-import { CustomTheme, ThemeProviderProps } from "../types/themeTypes";
+import { CustomTheme } from "../types/themeTypes";
 import { ThemeContext } from "../contexts/ThemeContext";
+import App from "../App";
 
-export default function ThemeProvider({ children }: ThemeProviderProps) {
+export default function ThemeProvider() {
   const prefersDarkTheme = window.matchMedia(
     "(prefers-color-scheme: dark)"
   ).matches;
@@ -40,7 +41,7 @@ export default function ThemeProvider({ children }: ThemeProviderProps) {
   return (
     <StyledComponentsThemeProvider theme={theme}>
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
-        {children}
+        <App />
       </ThemeContext.Provider>
     </StyledComponentsThemeProvider>
   );

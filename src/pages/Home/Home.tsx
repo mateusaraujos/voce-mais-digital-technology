@@ -1,4 +1,3 @@
-import ThemeProvider from "../../components/ThemeProvider";
 import Header from "../../components/Header/Header";
 import Carousel from "../../components/Carousel/Carousel";
 import ChooseCourse from "../../components/ChooseCourse/ChooseCourse";
@@ -13,7 +12,7 @@ import ThemeToggle from "../../components/ThemeToogle/ThemeToogle";
 
 export default function Home() {
   return (
-    <ThemeProvider>
+    <>
       <ThemeToggle />
       <Header />
       <main>
@@ -24,6 +23,6 @@ export default function Home() {
         <ComeBeMaisDigital />
       </main>
       <Footer />
-    </ThemeProvider>
+    </>
   );
 }
