@@ -2,15 +2,19 @@ import TextVoceMaisDigital from "../TextVoceMaisDigital";
 
 import { TextMaisDigital } from "../../types/appTypes";
 import { TEXTS_MAIS_DIGITAL } from "../../constants/specialConstants";
+import { ContainerQuemSomos, SectionTwo } from "../../resources/themes/weArePlus";
+import { useTheme } from "../../hooks/useTheme";
 
 import imgVideo from "../../resources/assets/images/video.png";
 
 import "./WeAreVoceMais.css";
 
 export default function WeAreVoceMais() {
+  const { theme } = useTheme();
+
   return (
-    <section id="section-two">
-      <div className="center-section">
+    <SectionTwo theme={theme} id="section-two">
+      <ContainerQuemSomos className="center-section">
         <h2>
           <span className="thin">Somos a</span> você+digital
         </h2>
@@ -38,7 +42,7 @@ export default function WeAreVoceMais() {
             ))}
           </div>
         </div>
-      </div>
-    </section>
+      </ContainerQuemSomos>
+    </SectionTwo>
   );
 }

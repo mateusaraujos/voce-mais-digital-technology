@@ -1,11 +1,3 @@
-#section-two {
-  width: 100%;
-  background-color: #3fa63b;
-  color: #edebe7;
-  padding: 2.5rem 0;
-  user-select: none;
-}
-
 .section-plus {
   display: flex;
   flex-wrap: wrap;

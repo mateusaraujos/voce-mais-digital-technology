@@ -10,6 +10,15 @@ export const StyledHeader = styled.header<{ theme: CustomTheme }>`
       : "var(--primary-black)"};
 `;
 
+export const LogoLink = styled.a<{ theme: CustomTheme }>`
+  &:focus {
+    outline: ${(props) =>
+      props.theme.mode === "light"
+        ? "1.5px solid var(--dark-green)"
+        : "1.5px solid var(--light-green)"};
+  }
+`;
+
 export const LogoImage = styled.img`
   height: 4rem;
   width: auto;
@@ -39,5 +48,12 @@ export const PortalLink = styled(Link)<{ theme: CustomTheme }>`
           ? "var(--dark-green)"
           : "var(--light-green)"};
     }
+  }
+
+  &:focus {
+    outline: ${(props) =>
+      props.theme.mode === "light"
+        ? "1.5px solid var(--dark-green)"
+        : "1.5px solid var(--light-green)"};
   }
 `;

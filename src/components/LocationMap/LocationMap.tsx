@@ -1,4 +1,6 @@
 import CommitmentSeal from "../CommitmentSeal/CommitmentSeal";
+import { useTheme } from "../../hooks/useTheme";
+import { PointImage, SectionThree } from "../../resources/themes/locationMap";
 
 import imgMapa from "../../resources/assets/images/mapa.png";
 import imgLocal from "/img/icons/local.png";
@@ -6,8 +8,10 @@ import imgLocal from "/img/icons/local.png";
 import "./LocationMap.css";
 
 export default function LocationMap() {
+  const { theme } = useTheme();
+
   return (
-    <section className="section-three">
+    <SectionThree theme={theme} className="section-three">
       <div className="center-section">
         <div className="section-map">
           <div className="map-size">
@@ -20,7 +24,11 @@ export default function LocationMap() {
               você!
             </h2>
             <div className="superscription">
-              <img className="local-point" src={imgLocal} alt="Ponto Local" />
+              <PointImage
+                className="local-point"
+                src={imgLocal}
+                alt="Ponto Local"
+              />
               <p>
                 Rua Domingos Correia, 76,
                 <br /> Centro, Arapiraca/AL
@@ -30,6 +38,6 @@ export default function LocationMap() {
         </div>
       </div>
       <CommitmentSeal />
-    </section>
+    </SectionThree>
   );
 }

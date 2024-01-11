@@ -25,8 +25,6 @@ html {
 :root {
   font-weight: 600;
 
-  color: var(--primary-black);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 
@@ -34,6 +32,7 @@ html {
   --dark-green: #3fa63b;
   --light-green: #00ff83;
   --primary-white: #edebe7;
+  --secondary-white: #fff;
   --primary-orange: #ff5211;
   --primary-black: #0d0d0d;
   --secondary-black: #282828;
@@ -66,10 +65,6 @@ a::before {
 
 a:hover::before {
   width: 100%;
-}
-
-a:focus {
-  outline: 1.5px solid var(--dark-green);
 }
 
 /* Padrão de listas não ordenadas */

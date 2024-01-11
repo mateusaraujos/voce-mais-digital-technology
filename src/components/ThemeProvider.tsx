@@ -5,6 +5,10 @@ import { CustomTheme } from "../types/themeTypes";
 import { ThemeContext } from "../contexts/ThemeContext";
 import App from "../App";
 
+import faviconLight from "../resources/assets/images/favicon-light.ico";
+import faviconDark from "../resources/assets/images/favicon-dark.ico";
+import { useDynamicHead } from "../hooks/useDynamicHead";
+
 export default function ThemeProvider() {
   const prefersDarkTheme = window.matchMedia(
     "(prefers-color-scheme: dark)"
@@ -37,6 +41,12 @@ export default function ThemeProvider() {
       mediaQuery.removeEventListener("change", handleChange);
     };
   }, []);
+
+  const faviconStyle = theme.mode === "light" ? faviconLight : faviconDark;
+  const themeColor = theme.mode === "light" ? "#3fa63b" : "#0d0d0d";
+
+  // Modifica <head> dinamicamente
+  useDynamicHead(faviconStyle, themeColor);
 
   return (
     <StyledComponentsThemeProvider theme={theme}>

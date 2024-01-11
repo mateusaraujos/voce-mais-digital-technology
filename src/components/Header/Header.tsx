@@ -7,6 +7,7 @@ import {
   StyledHeader,
   LogoImage,
   PortalLink,
+  LogoLink,
 } from "../../resources/themes/header";
 
 import imgLogo from "../../resources/assets/images/logo.png";
@@ -23,13 +24,13 @@ export default function Header() {
       <div className="dark-green"></div>
       <div className="center-header">
         <nav>
-          <a className="logo-link" href="/">
+          <LogoLink className="logo-link" href="/">
             <LogoImage
               className="imgLogo"
               src={theme.mode === "light" ? imgLogo : imgDarkLogo}
               alt="Você mais digital"
             />
-          </a>
+          </LogoLink>
           <ul>
             {HEADER_LINKS.map((link: HeaderLink) => (
               <Links key={link.text} {...link} />

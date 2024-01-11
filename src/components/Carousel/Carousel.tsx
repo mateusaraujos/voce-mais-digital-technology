@@ -8,9 +8,9 @@ import CustomPoints from "../CustomPoints/CustomPoints";
 
 import { useTheme } from "../../hooks/useTheme";
 import { CarouselProps } from "../../types/appTypes";
+import { CorouselSection } from "../../resources/themes/corousel";
 
 import "./Carousel.css";
-import { CorouselSection } from "../../resources/themes/corousel";
 
 export default function Carousel({ images }: CarouselProps) {
   const { theme } = useTheme();
