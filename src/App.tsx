@@ -1,9 +1,15 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
+
 import AppRouter from "./routes/AppRouter";
-import initialLogo from "/img/logo-inicial.png";
+import { useTheme } from "./hooks/useTheme";
+import { HomeScreen, InitialLogo } from "./resources/themes/app";
+
+import initialLogo from "../src/resources/assets/images/logo-inicial.png";
+import darkInitialLogo from "../src/resources/assets/images/dark-logo-inicial.png";
 
 export default function App() {
+  const { theme } = useTheme();
   const [carregando, setCarregando] = useState(true);
 
   useEffect(() => {
@@ -14,14 +20,14 @@ export default function App() {
 
   if (carregando) {
     return (
-      <div className="position-fixed">
-        <img
+      <HomeScreen className="position-fixed">
+        <InitialLogo
           className="img-fluid"
-          src={initialLogo}
+          src={theme.mode === "light" ? initialLogo : darkInitialLogo}
           alt="Você + Digital Technology"
           draggable="false"
         />
-      </div>
+      </HomeScreen>
     );
   }
 

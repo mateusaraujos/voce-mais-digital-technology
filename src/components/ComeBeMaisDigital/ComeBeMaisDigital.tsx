@@ -1,11 +1,16 @@
+import { useTheme } from "../../hooks/useTheme";
+import { ComeBeDivision, SectionFour } from "../../resources/themes/comeBeMaisDigital";
+
 import Form from "../Form/Form";
 
 import "./ComeBeMaisDigital.css";
 
 export default function ComeBeMaisDigital() {
+  const { theme } = useTheme();
+
   return (
-    <section id="section-four">
-      <div className="center-section">
+    <SectionFour theme={theme} id="section-four">
+      <ComeBeDivision className="center-section">
         <h2>
           <span className="thin">Venha ser</span> +digital
         </h2>
@@ -27,7 +32,7 @@ export default function ComeBeMaisDigital() {
             <Form />
           </div>
         </div>
-      </div>
-    </section>
+      </ComeBeDivision>
+    </SectionFour>
   );
 }

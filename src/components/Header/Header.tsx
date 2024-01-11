@@ -1,34 +1,46 @@
-import { Link } from "react-router-dom";
-
 import Links from "../Links";
 
 import { HeaderLink } from "../../types/appTypes";
 import { HEADER_LINKS } from "../../constants/appConstants";
+import { useTheme } from "../../hooks/useTheme";
+import {
+  StyledHeader,
+  LogoImage,
+  PortalLink,
+  LogoLink,
+} from "../../resources/themes/header";
 
-import imgLogo from "/img/logo.png";
+import imgLogo from "../../resources/assets/images/logo.png";
+import imgDarkLogo from "../../resources/assets/images/darkLogo.png";
 
 import "./Header.css";
 
 export default function Header() {
+  const { theme } = useTheme();
+
   return (
-    <header>
+    <StyledHeader theme={theme}>
       <div className="light-green"></div>
       <div className="dark-green"></div>
       <div className="center-header">
         <nav>
-          <a className="logo-link" href="/">
-            <img className="imgLogo" src={imgLogo} alt="Você mais digital" />
-          </a>
+          <LogoLink className="logo-link" href="/">
+            <LogoImage
+              className="imgLogo"
+              src={theme.mode === "light" ? imgLogo : imgDarkLogo}
+              alt="Você mais digital"
+            />
+          </LogoLink>
           <ul>
             {HEADER_LINKS.map((link: HeaderLink) => (
               <Links key={link.text} {...link} />
             ))}
           </ul>
-          <Link className="portal" to="/portal-do-aluno">
+          <PortalLink className="portal" to="/portal-do-aluno">
             Portal do Aluno
-          </Link>
+          </PortalLink>
         </nav>
       </div>
-    </header>
+    </StyledHeader>
   );
 }

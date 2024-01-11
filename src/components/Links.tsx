@@ -1,11 +1,16 @@
 import { HeaderLink } from "../types/appTypes";
+import { useTheme } from "../hooks/useTheme";
+
+import { HeaderLinks } from "../resources/themes/links";
 
 export default function Links({ url, text }: HeaderLink) {
+  const { theme } = useTheme();
+
   return (
     <li>
-      <a className="page-links" href={url}>
+      <HeaderLinks theme={theme} className="page-links" href={url}>
         {text}
-      </a>
+      </HeaderLinks>
     </li>
   );
 }

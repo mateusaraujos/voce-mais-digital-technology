@@ -2,10 +2,13 @@ import { useState, ChangeEvent, FormEvent } from "react";
 
 import { FormValue } from "../../types/appTypes";
 import { FORM_FIELDS } from "../../constants/appConstants";
+import { useTheme } from "styled-components";
+import { FormButton, FormContainer, FormInput, FormSelect } from "../../resources/themes/form";
 
 import "./Form.css";
 
 export default function Form() {
+  const { theme } = useTheme();
   const [formValues, setFormValues] = useState<FormValue>({});
 
   const handleSubmit = (event: FormEvent) => {
@@ -26,7 +29,7 @@ export default function Form() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="form-grid">
+    <FormContainer theme={theme} onSubmit={handleSubmit} className="form-grid">
       {FORM_FIELDS.map((field, index) => (
         <div
           className={`form-element ${
@@ -53,7 +56,7 @@ export default function Form() {
             {field.required && <span>*</span>}
           </label>
           {field.type === "select" ? (
-            <select
+            <FormSelect
               name={field.name}
               id={field.label}
               value={formValues[field.name] || ""}
@@ -70,9 +73,9 @@ export default function Form() {
                     {escolha.label}
                   </option>
                 ))}
-            </select>
+            </FormSelect>
           ) : (
-            <input
+            <FormInput
               type={field.type}
               name={field.name}
               id={field.label}
@@ -85,7 +88,7 @@ export default function Form() {
           )}
         </div>
       ))}
-      <button type="submit">Enviar</button>
-    </form>
+      <FormButton type="submit">Enviar</FormButton>
+    </FormContainer>
   );
 }

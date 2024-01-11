@@ -8,9 +8,12 @@ import Footer from "../../components/Footer/Footer";
 
 import { BANNERS } from "../../constants/appConstants";
 
+import ThemeToggle from "../../components/ThemeToogle/ThemeToogle";
+
 export default function Home() {
   return (
     <>
+      <ThemeToggle />
       <Header />
       <main>
         <Carousel images={BANNERS} />

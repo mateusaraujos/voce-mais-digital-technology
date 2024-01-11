@@ -6,11 +6,14 @@ import "slick-carousel/slick/slick-theme.css";
 
 import CustomPoints from "../CustomPoints/CustomPoints";
 
+import { useTheme } from "../../hooks/useTheme";
 import { CarouselProps } from "../../types/appTypes";
+import { CorouselSection } from "../../resources/themes/corousel";
 
 import "./Carousel.css";
 
 export default function Carousel({ images }: CarouselProps) {
+  const { theme } = useTheme();
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -37,7 +40,7 @@ export default function Carousel({ images }: CarouselProps) {
   };
 
   return (
-    <section className="section-zero">
+    <CorouselSection theme={theme} className="section-zero">
       <Slider {...settings}>
         {images.map((image, index) => (
           <div
@@ -58,6 +61,6 @@ export default function Carousel({ images }: CarouselProps) {
           </div>
         ))}
       </Slider>
-    </section>
+    </CorouselSection>
   );
 }
