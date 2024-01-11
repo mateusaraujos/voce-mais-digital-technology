@@ -50,6 +50,20 @@
 
 # Registro de Alterações
 
+## 0.6.0
+
+- Botão de mudança de tema [#1](https://github.com/mateusaraujos/voce-mais-digital-technology/pull/1)
+
+- Adições
+
+  - Adicionar themes.
+  - Adicionar um botão para troca de temas manual.
+  - Adicionar troca dinâmica de temas conforme preferências do dispositivo do usuário.
+
+- Remoções
+
+  - Remover a branch `theme-switch-button`.
+
 ## 0.5.0
 
 - Adições
