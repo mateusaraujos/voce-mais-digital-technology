@@ -28,9 +28,14 @@ export const FormInput = styled.input<{ theme: CustomTheme }>`
   color: var(--primary-black);
 
   &:focus {
-    border-color: var(--primary-white);
-    box-shadow: 0 0 5px var(--primary-black);
-    outline: none;
+    box-shadow: ${(props) =>
+      props.theme.mode === "light"
+        ? "0 0 15px var(--light-green)"
+        : "0 0 5px var(--primary-black)"};
+    outline: ${(props) =>
+      props.theme.mode === "light"
+        ? "0 0 15px var(--light-green)"
+        : "0 0 5px var(--primary-black)"};
   }
 `;
 
@@ -46,9 +51,14 @@ export const FormSelect = styled.select<{ theme: CustomTheme }>`
   color: var(--primary-black);
 
   &:focus {
-    border-color: var(--primary-white);
-    box-shadow: 0 0 5px var(--primary-black);
-    outline: none;
+    box-shadow: ${(props) =>
+      props.theme.mode === "light"
+        ? "0 0 15px var(--light-green)"
+        : "0 0 5px var(--primary-black)"};
+    outline: ${(props) =>
+      props.theme.mode === "light"
+        ? "0 0 15px var(--light-green)"
+        : "0 0 5px var(--primary-black)"};
   }
 `;
 
