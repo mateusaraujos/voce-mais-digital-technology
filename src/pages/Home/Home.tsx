@@ -13,7 +13,6 @@ import ThemeToggle from "../../components/ThemeToogle/ThemeToogle";
 export default function Home() {
   return (
     <>
-      <ThemeToggle />
       <Header />
       <main>
         <Carousel images={BANNERS} />
@@ -23,6 +22,7 @@ export default function Home() {
         <ComeBeMaisDigital />
       </main>
       <Footer />
+      <ThemeToggle />
     </>
   );
 }
