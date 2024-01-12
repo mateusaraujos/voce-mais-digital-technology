@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import { ScrollToTopButton } from "../../resources/themes/scrollToTopButton";
+
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -29,11 +31,11 @@ export default function ScrollToTop() {
   }, []);
 
   return (
-    <button
+    <ScrollToTopButton
       className={`scroll-to-top ${isVisible ? "visible" : ""}`}
       onClick={scrollToTop}
     >
       &#8679; Top
-    </button>
+    </ScrollToTopButton>
   );
 }
