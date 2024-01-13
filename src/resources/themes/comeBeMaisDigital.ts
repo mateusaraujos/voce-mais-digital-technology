@@ -11,7 +11,7 @@ export const SectionFour = styled.section<{ theme: CustomTheme }>`
   width: 100%;
   color: var(--primary-white);
   padding: ${(props) =>
-    props.theme.mode === "light" ? "2.5rem 0 3.5rem 0" : "0 0 1rem 0"};
+    props.theme.mode === "light" ? "2.5rem 0 3.5rem 0" : "0"};
   user-select: none;
 `;
 
