@@ -50,12 +50,30 @@
 
 # Registro de Alterações
 
+## 0.7.0
+
+- Botão de voltar ao topo da página [#2](https://github.com/mateusaraujos/voce-mais-digital-technology/pull/2)
+
+- Adições
+
+  - Adicinoar a branch `scroll-to-top-button`.
+  - Adicionar um botão para rolar a página ao topo.
+
+- Remoções
+
+  - Excluir a branch `scroll-to-top-button`.
+
+- Outros
+
+  - Definir `rootElement` para usar com a propriedade `scrollTo`.
+
 ## 0.6.0
 
 - Botão de mudança de tema [#1](https://github.com/mateusaraujos/voce-mais-digital-technology/pull/1)
 
 - Adições
 
+  - Adicionar a branch `theme-switch-button`.
   - Adicionar themes.
   - Adicionar um botão para troca de temas manual.
   - Adicionar troca dinâmica de temas conforme preferências do dispositivo do usuário.
