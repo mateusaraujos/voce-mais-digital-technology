@@ -9,6 +9,7 @@ import Footer from "../../components/Footer/Footer";
 import { BANNERS } from "../../constants/appConstants";
 
 import ThemeToggle from "../../components/ThemeToogle/ThemeToogle";
+import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       </main>
       <Footer />
       <ThemeToggle />
+      <ScrollToTop />
     </>
   );
 }
