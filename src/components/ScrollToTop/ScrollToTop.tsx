@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { ScrollUpButton } from "../../resources/themes/scrollToTop";
+import { ModeImage } from "../../resources/themes/themeButton";
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -31,5 +32,11 @@ export default function ScrollToTop() {
     });
   };
 
-  return isVisible && <ScrollUpButton onClick={scrollToTop}>UP</ScrollUpButton>;
+  return (
+    isVisible && (
+      <ScrollUpButton onClick={scrollToTop}>
+        <ModeImage src="/img/icons/arrow-up.svg" alt="Seta para cima" />
+      </ScrollUpButton>
+    )
+  );
 }

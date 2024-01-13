@@ -14,6 +14,9 @@ import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 export default function Home() {
   return (
     <>
+      <ThemeToggle />
+      <ScrollToTop />
+
       <Header />
       <main>
         <Carousel images={BANNERS} />
@@ -23,8 +26,6 @@ export default function Home() {
         <ComeBeMaisDigital />
       </main>
       <Footer />
-      <ThemeToggle />
-      <ScrollToTop />
     </>
   );
 }

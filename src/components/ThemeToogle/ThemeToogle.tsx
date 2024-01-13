@@ -11,7 +11,7 @@ export default function ThemeToggle() {
     <ThemeButton onClick={toggleTheme}>
       <ModeImage
         src={theme.mode === "light" ? imgDarkMode : imgLightMode}
-        alt="Mode"
+        alt={theme.mode === "light" ? "Modo Escuro" : "Modo Claro"}
       />
     </ThemeButton>
   );

@@ -5,8 +5,8 @@ import { CustomTheme } from "../types/themeTypes";
 import { ThemeContext } from "../contexts/ThemeContext";
 import App from "../App";
 
-import faviconLight from "../resources/assets/images/favicon-light.ico";
-import faviconDark from "../resources/assets/images/favicon-dark.ico";
+import faviconLight from "../resources/assets/images/icons/favicon-light.ico";
+import faviconDark from "../resources/assets/images/icons/favicon-dark.ico";
 import { useDynamicHead } from "../hooks/useDynamicHead";
 
 export default function ThemeProvider() {
