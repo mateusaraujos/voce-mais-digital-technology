@@ -50,6 +50,18 @@
 
 # Registro de Alterações
 
+## 0.7.1
+
+- Problema com a propriedade window [#3](https://github.com/mateusaraujos/voce-mais-digital-technology/issues/3)
+
+- Alterações
+
+  - Alterar os estilos CSS do botão de rolar a página ao topo.
+
+- Correções
+
+  - Resolver o problema da propriedade `window of Window`
+
 ## 0.7.0
 
 - Botão de voltar ao topo da página [#2](https://github.com/mateusaraujos/voce-mais-digital-technology/pull/2)
