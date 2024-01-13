@@ -52,7 +52,7 @@
 
 ## 0.7.1
 
-- Problema com a propriedade window [#3](https://github.com/mateusaraujos/voce-mais-digital-technology/issues/3)
+> Problema com a propriedade window [#3](https://github.com/mateusaraujos/voce-mais-digital-technology/issues/3)
 
 - Alterações
 
@@ -64,7 +64,7 @@
 
 ## 0.7.0
 
-- Botão de voltar ao topo da página [#2](https://github.com/mateusaraujos/voce-mais-digital-technology/pull/2)
+> Botão de voltar ao topo da página [#2](https://github.com/mateusaraujos/voce-mais-digital-technology/pull/2)
 
 - Adições
 
@@ -81,7 +81,7 @@
 
 ## 0.6.0
 
-- Botão de mudança de tema [#1](https://github.com/mateusaraujos/voce-mais-digital-technology/pull/1)
+>**** Botão de mudança de tema [#1](https://github.com/mateusaraujos/voce-mais-digital-technology/pull/1)
 
 - Adições
 
