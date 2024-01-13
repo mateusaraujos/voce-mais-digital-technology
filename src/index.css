@@ -12,15 +12,16 @@ html {
   background-color: var(--primary-white);
 }
 
+/*
 #root {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  /* Overflow-x hidden para o bom funcionamento do Carrossel */
   overflow-x: hidden;
 }
+*/
 
 :root {
   font-weight: 600;
@@ -35,7 +36,9 @@ html {
   --secondary-white: #fff;
   --primary-orange: #ff5211;
   --primary-black: #0d0d0d;
+  --primary-black-transparent: rgba(13, 13, 13, 0.5);
   --secondary-black: #282828;
+  --secondary-black-transparent: rgba(40, 40, 40, 0.5);
 }
 
 body,

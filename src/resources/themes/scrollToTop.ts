@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import { CustomTheme } from "../../types/themeTypes";
 
-export const ThemeButton = styled.button<{ theme: CustomTheme }>`
+export const ScrollUpButton = styled.button`
   position: fixed;
   bottom: 2rem;
-  left: 2rem;
+  right: 2.5rem;
   width: 3rem;
   height: 3rem;
   background-color: rgba(13, 13, 13, 0);
@@ -22,11 +21,9 @@ export const ThemeButton = styled.button<{ theme: CustomTheme }>`
   &:hover {
     background-color: lightgray;
   }
-`;
 
-export const ModeImage = styled.img`
-  margin-top: 0.13rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  pointer-events: none;
+  /* Celular */
+  @media (max-width: 414px), (max-width: 896px) {
+    right: 2rem;
+  }
 `;
