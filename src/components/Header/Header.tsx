@@ -1,5 +1,4 @@
 import Links from "../Links";
-
 import { HeaderLink } from "../../types/appTypes";
 import { HEADER_LINKS } from "../../constants/appConstants";
 import { useTheme } from "../../hooks/useTheme";
@@ -8,10 +7,10 @@ import {
   LogoImage,
   PortalLink,
   LogoLink,
-} from "../../resources/themes/header";
+} from "../../styles/header";
 
-import imgLogo from "../../resources/assets/images/logo.png";
-import imgDarkLogo from "../../resources/assets/images/darkLogo.png";
+import imgLogo from "../../assets/images/logo.png";
+import imgDarkLogo from "../../assets/images/darkLogo.png";
 
 import "./Header.css";
 

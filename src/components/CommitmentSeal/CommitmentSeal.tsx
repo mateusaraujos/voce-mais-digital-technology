@@ -1,5 +1,5 @@
 import { useTheme } from "../../hooks/useTheme";
-import { SealArticle } from "../../resources/themes/commitmentSeal";
+import { SealArticle, Stamp } from "../../styles/commitmentSeal";
 
 import imgSelo from "/img/icons/selo.png";
 
@@ -12,7 +12,7 @@ export default function CommitmentSeal() {
     <SealArticle theme={theme}>
       <div className="center-article">
         <div className="article-commitment">
-          <img className="stamp" src={imgSelo} alt="Selo" />
+          <Stamp className="stamp" src={imgSelo} alt="Selo" />
           <p>
             Compromisso absoluto com a<br /> excelência em cada curso.
           </p>

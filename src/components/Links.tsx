@@ -1,7 +1,6 @@
 import { HeaderLink } from "../types/appTypes";
 import { useTheme } from "../hooks/useTheme";
-
-import { HeaderLinks } from "../resources/themes/links";
+import { HeaderLinks } from "../styles/links";
 
 export default function Links({ url, text }: HeaderLink) {
   const { theme } = useTheme();

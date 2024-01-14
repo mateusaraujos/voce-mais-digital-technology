@@ -1,11 +1,10 @@
 import TextVoceMaisDigital from "../TextVoceMaisDigital";
-
 import { TextMaisDigital } from "../../types/appTypes";
 import { TEXTS_MAIS_DIGITAL } from "../../constants/specialConstants";
-import { ContainerQuemSomos, SectionTwo } from "../../resources/themes/weArePlus";
+import { ContainerQuemSomos, SectionTwo } from "../../styles/weArePlus";
 import { useTheme } from "../../hooks/useTheme";
 
-import imgVideo from "../../resources/assets/images/video.png";
+import imgVideo from "../../assets/images/video.png";
 
 import "./WeAreVoceMais.css";
 

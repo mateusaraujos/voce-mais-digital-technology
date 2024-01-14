@@ -1,8 +1,7 @@
 import CourseExamples from "../CourseExamples";
-
 import { CourseExample } from "../../types/appTypes";
 import { COURSE_EXAMPLES } from "../../constants/specialConstants";
-import { LinkCatalog, SectionOne } from "../../resources/themes/chooseCourse";
+import { LinkCatalog, SectionOne } from "../../styles/chooseCourse";
 import { useTheme } from "../../hooks/useTheme";
 
 import "./ChooseCourse.css";

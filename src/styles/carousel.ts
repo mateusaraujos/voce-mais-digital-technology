@@ -1,9 +1,10 @@
-import { CustomTheme } from "./../../types/themeTypes";
 import styled from "styled-components";
+
+import { CustomTheme } from "../types/themeTypes";
 
 import pattern1 from "../assets/images/pattern1.png";
 
-export const CorouselSection = styled.section<{ theme: CustomTheme }>`
+export const CarouselSection = styled.section<{ theme: CustomTheme }>`
   ${(props) => (props.theme.mode === "light" ? "" : "filter: brightness(90%)")};
   background-size: 55%;
   background-repeat: repeat;

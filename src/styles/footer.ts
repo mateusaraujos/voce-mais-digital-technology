@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { CustomTheme } from "../../types/themeTypes";
+import { CustomTheme } from "../types/themeTypes";
 
 export const StyledFooter = styled.footer<{ theme: CustomTheme }>`
   background-color: ${(props) =>
@@ -19,9 +19,10 @@ export const StyledFooter = styled.footer<{ theme: CustomTheme }>`
 export const LogoImageFooter = styled.img`
   height: 6rem;
   width: auto;
+  pointer-events: none;
 `;
 
-export const By = styled.small<{ theme: CustomTheme }>`
+export const By = styled.small`
   color: rgba(128, 128, 128, 0.5);
 `;
 

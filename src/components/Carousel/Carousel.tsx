@@ -1,14 +1,12 @@
 import { useState, useEffect } from "react";
-
 import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import CustomPoints from "../CustomPoints/CustomPoints";
-
 import { useTheme } from "../../hooks/useTheme";
 import { CarouselProps } from "../../types/appTypes";
-import { CorouselSection } from "../../resources/themes/corousel";
+import { CarouselSection } from "../../styles/carousel";
 
 import "./Carousel.css";
 
@@ -40,7 +38,7 @@ export default function Carousel({ images }: CarouselProps) {
   };
 
   return (
-    <CorouselSection theme={theme} className="section-zero">
+    <CarouselSection theme={theme} className="section-zero">
       <Slider {...settings}>
         {images.map((image, index) => (
           <div
@@ -61,6 +59,6 @@ export default function Carousel({ images }: CarouselProps) {
           </div>
         ))}
       </Slider>
-    </CorouselSection>
+    </CarouselSection>
   );
 }

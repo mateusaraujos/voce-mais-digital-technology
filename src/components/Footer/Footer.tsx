@@ -1,14 +1,13 @@
 import Links from "../Links";
 import SocialLinks from "../SocialLinks";
-
 import { SocialLink, ToCourse } from "../../types/appTypes";
 import { SOME_COURSES } from "../../constants/appConstants";
 import { SOCIAL_LINKS } from "../../constants/specialConstants";
-import { By, ByLink, LogoImageFooter, StyledFooter } from "../../resources/themes/footer";
+import { By, ByLink, LogoImageFooter, StyledFooter } from "../../styles/footer";
 import { useTheme } from "../../hooks/useTheme";
 
-import imgLogo from "../../resources/assets/images/logo.png";
-import imgDarkLogo from "../../resources/assets/images/darkLogo.png";
+import imgLogo from "../../assets/images/logo.png";
+import imgDarkLogo from "../../assets/images/darkLogo.png";
 
 import "./Footer.css";
 

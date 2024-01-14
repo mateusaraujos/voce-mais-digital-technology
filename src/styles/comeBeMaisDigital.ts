@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { CustomTheme } from "../../types/themeTypes";
+import { CustomTheme } from "../types/themeTypes";
 
 export const SectionFour = styled.section<{ theme: CustomTheme }>`
   background-color: ${(props) =>

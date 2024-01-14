@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { CustomTheme } from "../../types/themeTypes";
+import { CustomTheme } from "../types/themeTypes";
 
 export const SectionThree = styled.section<{ theme: CustomTheme }>`
   background-color: ${(props) =>
@@ -23,4 +23,5 @@ export const PointImage = styled.img<{ theme: CustomTheme }>`
   margin-right: ${(props) => (props.theme.mode === "light" ? "" : "0.5rem")};
   height: 4rem;
   width: auto;
+  pointer-events: none;
 `;

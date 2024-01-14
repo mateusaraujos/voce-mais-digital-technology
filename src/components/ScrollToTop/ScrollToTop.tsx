@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { ScrollUpButton } from "../../resources/themes/scrollToTop";
-import { ModeImage } from "../../resources/themes/themeButton";
+
+import { ScrollUpButton } from "../../styles/scrollToTop";
+import { ModeImage } from "../../styles/themeButton";
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);

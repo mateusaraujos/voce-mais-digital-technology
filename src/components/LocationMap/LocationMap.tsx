@@ -1,8 +1,8 @@
 import CommitmentSeal from "../CommitmentSeal/CommitmentSeal";
 import { useTheme } from "../../hooks/useTheme";
-import { PointImage, SectionThree } from "../../resources/themes/locationMap";
+import { PointImage, SectionThree } from "../../styles/locationMap";
 
-import imgMapa from "../../resources/assets/images/mapa.png";
+import imgMapa from "../../assets/images/mapa.png";
 import imgLocal from "/img/icons/local.png";
 
 import "./LocationMap.css";

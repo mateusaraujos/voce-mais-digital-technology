@@ -1,7 +1,6 @@
-import { useTheme } from "../../hooks/useTheme";
-import { ComeBeDivision, SectionFour } from "../../resources/themes/comeBeMaisDigital";
-
 import Form from "../Form/Form";
+import { useTheme } from "../../hooks/useTheme";
+import { ComeBeDivision, SectionFour } from "../../styles/comeBeMaisDigital";
 
 import "./ComeBeMaisDigital.css";
 

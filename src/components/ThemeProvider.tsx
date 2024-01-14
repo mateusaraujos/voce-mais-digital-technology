@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { ThemeProvider as StyledComponentsThemeProvider } from "styled-components";
 
+import App from "../App";
 import { CustomTheme } from "../types/themeTypes";
 import { ThemeContext } from "../contexts/ThemeContext";
-import App from "../App";
-
-import faviconLight from "../resources/assets/images/icons/favicon-light.ico";
-import faviconDark from "../resources/assets/images/icons/favicon-dark.ico";
 import { useDynamicHead } from "../hooks/useDynamicHead";
+
+import faviconLight from "../assets/images/icons/favicon-light.ico";
+import faviconDark from "../assets/images/icons/favicon-dark.ico";
 
 export default function ThemeProvider() {
   const prefersDarkTheme = window.matchMedia(

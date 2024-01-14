@@ -1,7 +1,7 @@
-import styled from "styled-components";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 
-import { CustomTheme } from "../../types/themeTypes";
+import { CustomTheme } from "../types/themeTypes";
 
 export const SectionOne = styled.section<{ theme: CustomTheme }>`
   width: 100%;

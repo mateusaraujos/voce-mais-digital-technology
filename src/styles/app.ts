@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { CustomTheme } from "../../types/themeTypes";
+
+import { CustomTheme } from "../types/themeTypes";
 
 export const HomeScreen = styled.div<{ theme: CustomTheme }>`
   background-color: ${(props) =>

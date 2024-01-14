@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import { CustomTheme } from "../../types/themeTypes";
-
 import { Link } from "react-router-dom";
+import styled from "styled-components";
+
+import { CustomTheme } from "../types/themeTypes";
 
 export const StyledHeader = styled.header<{ theme: CustomTheme }>`
   background-color: ${(props) =>
@@ -22,6 +22,7 @@ export const LogoLink = styled.a<{ theme: CustomTheme }>`
 export const LogoImage = styled.img`
   height: 4rem;
   width: auto;
+  pointer-events: none;
 `;
 
 export const PortalLink = styled(Link)<{ theme: CustomTheme }>`

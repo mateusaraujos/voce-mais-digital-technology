@@ -1,9 +1,14 @@
 import { useState, ChangeEvent, FormEvent } from "react";
+import { useTheme } from "styled-components";
 
 import { FormValue } from "../../types/appTypes";
 import { FORM_FIELDS } from "../../constants/appConstants";
-import { useTheme } from "styled-components";
-import { FormButton, FormContainer, FormInput, FormSelect } from "../../resources/themes/form";
+import {
+  FormButton,
+  FormContainer,
+  FormInput,
+  FormSelect,
+} from "../../styles/form";
 
 import "./Form.css";
 
