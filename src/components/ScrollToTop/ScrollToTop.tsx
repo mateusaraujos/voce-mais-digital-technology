@@ -8,7 +8,7 @@ export default function ScrollToTop() {
 
   // const rootElement = document.getElementById("root");
 
-  // // Mostrar botão quando a página é rolada para baixo a 100vh
+  // Mostrar botão quando a página é rolada para baixo a 100vh
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.scrollY > window.innerHeight) {

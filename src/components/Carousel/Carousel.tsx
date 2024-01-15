@@ -6,9 +6,12 @@ import "slick-carousel/slick/slick-theme.css";
 import CustomPoints from "../CustomPoints/CustomPoints";
 import { useTheme } from "../../hooks/useTheme";
 import { CarouselProps } from "../../types/appTypes";
-import { CarouselSection } from "../../styles/carousel";
-
-import "./Carousel.css";
+import {
+  Banner,
+  BannerSize,
+  CarouselSection,
+  SectionCarousel,
+} from "../../styles/carousel";
 
 export default function Carousel({ images }: CarouselProps) {
   const { theme } = useTheme();
@@ -47,15 +50,15 @@ export default function Carousel({ images }: CarouselProps) {
               index === currentSlide ? "active" : ""
             }`}
           >
-            <div className="section-carousel">
-              <div className="banner-size">
-                <img
+            <SectionCarousel className="section-carousel">
+              <BannerSize className="banner-size">
+                <Banner
                   className="banner"
                   src={image}
                   alt={`Carousel image ${index + 1}`}
                 />
-              </div>
-            </div>
+              </BannerSize>
+            </SectionCarousel>
           </div>
         ))}
       </Slider>

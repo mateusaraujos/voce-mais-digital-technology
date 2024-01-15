@@ -15,6 +15,19 @@ export const FormContainer = styled.form<{ theme: CustomTheme }>`
   border-radius: 12px;
   box-shadow: ${(props) =>
     props.theme.mode === "light" ? "" : "0 0 5px var(--primary-black)"};
+
+  label {
+    color: #0d0d0d;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .div-1,
+  .div-4,
+  .div-7 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 `;
 
 export const FormInput = styled.input<{ theme: CustomTheme }>`
@@ -63,6 +76,8 @@ export const FormSelect = styled.select<{ theme: CustomTheme }>`
 `;
 
 export const FormButton = styled.button<{ theme: CustomTheme }>`
+  grid-column-start: 1;
+  grid-column-end: 3;
   cursor: pointer;
   font-family: "Raleway", sans-serif !important;
   font-weight: 600;

@@ -3,13 +3,18 @@ import SocialLinks from "../SocialLinks";
 import { SocialLink, ToCourse } from "../../types/appTypes";
 import { SOME_COURSES } from "../../constants/appConstants";
 import { SOCIAL_LINKS } from "../../constants/specialConstants";
-import { By, ByLink, LogoImageFooter, StyledFooter } from "../../styles/footer";
+import {
+  By,
+  ByLink,
+  Copy,
+  LogoImageFooter,
+  Social,
+  StyledFooter,
+} from "../../styles/footer";
 import { useTheme } from "../../hooks/useTheme";
 
 import imgLogo from "../../assets/images/logo.png";
 import imgDarkLogo from "../../assets/images/darkLogo.png";
-
-import "./Footer.css";
 
 export default function Footer() {
   const { theme } = useTheme();
@@ -20,7 +25,7 @@ export default function Footer() {
         <nav>
           <div>
             <LogoImageFooter
-              className="imgLogo scale-6"
+              className="imgLogo"
               src={theme.mode === "light" ? imgLogo : imgDarkLogo}
               alt="Você mais digital"
             />
@@ -33,7 +38,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          <div className="social">
+          <Social className="social">
             <ul>
               {SOCIAL_LINKS.map((social: SocialLink) => (
                 <SocialLinks key={social.alt} {...social} />
@@ -46,9 +51,9 @@ export default function Footer() {
                 Centro, Arapiraca/AL
               </address>
             </div>
-          </div>
+          </Social>
         </nav>
-        <div className="copy">
+        <Copy className="copy">
           <p>
             Copyright 2024 Você + Digital technology • Todos os direitos
             reservados
@@ -64,7 +69,7 @@ export default function Footer() {
             </ByLink>
             .
           </By>
-        </div>
+        </Copy>
       </div>
     </StyledFooter>
   );

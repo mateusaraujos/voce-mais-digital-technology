@@ -1,10 +1,14 @@
 import CourseExamples from "../CourseExamples";
 import { CourseExample } from "../../types/appTypes";
 import { COURSE_EXAMPLES } from "../../constants/specialConstants";
-import { LinkCatalog, SectionOne } from "../../styles/chooseCourse";
+import {
+  LinkCatalog,
+  SectionCourses,
+  SectionOne,
+  SectionOneTitle,
+  ToCoursesDiv,
+} from "../../styles/chooseCourse";
 import { useTheme } from "../../hooks/useTheme";
-
-import "./ChooseCourse.css";
 
 export default function ChooseCourse() {
   const { theme } = useTheme();
@@ -12,19 +16,19 @@ export default function ChooseCourse() {
   return (
     <SectionOne theme={theme} id="section-one">
       <div className="center-section">
-        <h2>Escolha seu curso</h2>
-        <div className="section-courses">
+        <SectionOneTitle>Escolha seu curso</SectionOneTitle>
+        <SectionCourses className="section-courses">
           <div className="course-examples">
             {COURSE_EXAMPLES.map((examples: CourseExample) => (
               <CourseExamples key={examples.alt} {...examples} />
             ))}
           </div>
-        </div>
-        <div className="to-courses">
+        </SectionCourses>
+        <ToCoursesDiv className="to-courses">
           <LinkCatalog className="courses-link" to="/catalogo-de-cursos">
             Catálogo de Cursos
           </LinkCatalog>
-        </div>
+        </ToCoursesDiv>
       </div>
     </SectionOne>
   );

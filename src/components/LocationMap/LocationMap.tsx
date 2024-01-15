@@ -1,11 +1,14 @@
 import CommitmentSeal from "../CommitmentSeal/CommitmentSeal";
 import { useTheme } from "../../hooks/useTheme";
-import { PointImage, SectionThree } from "../../styles/locationMap";
+import {
+  PointImage,
+  SectionMap,
+  SectionThree,
+  SectionThreeTitle,
+} from "../../styles/locationMap";
 
 import imgMapa from "../../assets/images/mapa.png";
 import imgLocal from "/img/icons/local.png";
-
-import "./LocationMap.css";
 
 export default function LocationMap() {
   const { theme } = useTheme();
@@ -13,16 +16,16 @@ export default function LocationMap() {
   return (
     <SectionThree theme={theme} className="section-three">
       <div className="center-section">
-        <div className="section-map">
+        <SectionMap className="section-map">
           <div className="map-size">
             <img className="map" src={imgMapa} alt="Mapa" />
           </div>
           <div className="adjust-close">
-            <h2>
+            <SectionThreeTitle>
               <span className="thin">Estamos</span> <br />
               perto de <br />
               você!
-            </h2>
+            </SectionThreeTitle>
             <div className="superscription">
               <PointImage
                 className="local-point"
@@ -35,7 +38,7 @@ export default function LocationMap() {
               </p>
             </div>
           </div>
-        </div>
+        </SectionMap>
       </div>
       <CommitmentSeal />
     </SectionThree>

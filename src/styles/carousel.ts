@@ -25,3 +25,23 @@ export const CarouselSection = styled.section<{ theme: CustomTheme }>`
     backdrop-filter: blur(5px);
   }
 `;
+
+export const SectionCarousel = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+`;
+
+export const BannerSize = styled.div`
+  max-width: 80rem;
+  margin: 0;
+`;
+
+export const Banner = styled.img`
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: -0.4rem;
+`;

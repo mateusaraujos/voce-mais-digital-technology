@@ -12,8 +12,6 @@ import {
 import imgLogo from "../../assets/images/logo.png";
 import imgDarkLogo from "../../assets/images/darkLogo.png";
 
-import "./Header.css";
-
 export default function Header() {
   const { theme } = useTheme();
 

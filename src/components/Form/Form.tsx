@@ -10,8 +10,6 @@ import {
   FormSelect,
 } from "../../styles/form";
 
-import "./Form.css";
-
 export default function Form() {
   const { theme } = useTheme();
   const [formValues, setFormValues] = useState<FormValue>({});

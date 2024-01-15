@@ -3,8 +3,6 @@ import { SealArticle, Stamp } from "../../styles/commitmentSeal";
 
 import imgSelo from "/img/icons/selo.png";
 
-import "./CommitmentSeal.css";
-
 export default function CommitmentSeal() {
   const { theme } = useTheme();
 

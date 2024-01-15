@@ -16,6 +16,46 @@ export const SectionThree = styled.section<{ theme: CustomTheme }>`
   user-select: none;
 `;
 
+export const SectionMap = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+
+  .map-size {
+    width: 30rem;
+  }
+
+  .map {
+    width: 100%;
+    height: auto;
+  }
+
+  .adjust-close {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .superscription {
+    display: flex;
+    align-items: center;
+    margin-left: -0.8rem;
+  }
+
+  .superscription p {
+    margin-left: 0;
+    font-size: 1rem;
+  }
+`;
+
+export const SectionThreeTitle = styled.h2`
+  line-height: 2.8rem;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+`;
+
 export const PointImage = styled.img<{ theme: CustomTheme }>`
   background-color: ${(props) =>
     props.theme.mode === "light" ? "" : "var(--primary-white)"};

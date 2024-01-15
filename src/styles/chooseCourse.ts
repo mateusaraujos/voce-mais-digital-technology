@@ -7,16 +7,52 @@ export const SectionOne = styled.section<{ theme: CustomTheme }>`
   width: 100%;
   padding: 2.5rem 0 3.5rem 0;
   user-select: none;
-
   color: ${(props) =>
     props.theme.mode === "light"
       ? "var(--primary-black)"
       : "var(--primary-white)"};
-
   background-color: ${(props) =>
     props.theme.mode === "light"
       ? "var(--primary-white)"
       : "var(--primary-black)"};
+`;
+
+export const SectionOneTitle = styled.h2`
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+`;
+
+export const SectionCourses = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .course-examples {
+    display: flex;
+    align-items: normal;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .img-examples {
+      width: 16rem;
+      height: auto;
+      margin: 0.3rem;
+    }
+
+    figcaption {
+      margin-top: 0.5rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+`;
+
+export const ToCoursesDiv = styled.div`
+  margin-top: 3rem;
+  text-align: center;
 `;
 
 export const LinkCatalog = styled(Link)<{ theme: CustomTheme }>`
