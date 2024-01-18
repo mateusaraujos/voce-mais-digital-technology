@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { CustomTheme } from "../types/themeTypes";
 
 export const FormContainerLogin = styled.form<{ theme: CustomTheme }>`
-user-select: none;
+  user-select: none;
   background-color: ${(props) =>
     props.theme.mode === "light"
       ? "var(--secondary-white)"
@@ -12,6 +12,7 @@ user-select: none;
   grid-template-columns: repeat(2, 1fr);
   gap: 0 1rem;
   width: 80%;
+  max-width: 30rem;
   margin: 2rem 0 5rem 0;
   padding: 1.5rem 2rem;
   border-radius: 12px;
