@@ -50,6 +50,16 @@
 
 # Registro de Alterações
 
+## 0.8.0
+
+- Adições
+
+  - Adicionar página `Authenticate`.
+
+- Estilos
+
+  - Formatar página `Authenticate`.
+
 ## 0.7.1
 
 > Problema com a propriedade window [#3](https://github.com/mateusaraujos/voce-mais-digital-technology/issues/3)
@@ -81,7 +91,7 @@
 
 ## 0.6.0
 
->**** Botão de mudança de tema [#1](https://github.com/mateusaraujos/voce-mais-digital-technology/pull/1)
+> \*\*\*\* Botão de mudança de tema [#1](https://github.com/mateusaraujos/voce-mais-digital-technology/pull/1)
 
 - Adições
 
