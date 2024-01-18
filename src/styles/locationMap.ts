@@ -13,7 +13,6 @@ export const SectionThree = styled.section<{ theme: CustomTheme }>`
       : "var(--primary-white)"};
   width: 100%;
   padding-top: 1.5rem;
-  user-select: none;
 `;
 
 export const SectionMap = styled.div`
@@ -23,6 +22,7 @@ export const SectionMap = styled.div`
   justify-content: flex-start;
 
   .map-size {
+    user-select: none;
     width: 30rem;
   }
 
@@ -64,4 +64,5 @@ export const PointImage = styled.img<{ theme: CustomTheme }>`
   height: 4rem;
   width: auto;
   pointer-events: none;
+  user-select: none;
 `;

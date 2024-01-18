@@ -64,7 +64,7 @@ export const LogoLink = styled.a<{ theme: CustomTheme }>`
 export const LogoImage = styled.img`
   height: 4rem;
   width: auto;
-  pointer-events: none;
+  user-select: none;
 `;
 
 export const PortalLink = styled(Link)<{ theme: CustomTheme }>`

@@ -12,7 +12,6 @@ export const SectionFour = styled.section<{ theme: CustomTheme }>`
   color: var(--primary-white);
   padding: ${(props) =>
     props.theme.mode === "light" ? "2.5rem 0 3.5rem 0" : "0"};
-  user-select: none;
 `;
 
 export const ComeBeDiv = styled.div<{ theme: CustomTheme }>`

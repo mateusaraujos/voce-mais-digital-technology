@@ -4,7 +4,6 @@ import { CustomTheme } from "../types/themeTypes";
 
 export const StyledFooter = styled.footer<{ theme: CustomTheme }>`
   width: 100%;
-  user-select: none;
   padding: 2rem 0;
   background-color: ${(props) =>
     props.theme.mode === "light"
@@ -26,6 +25,7 @@ export const StyledFooter = styled.footer<{ theme: CustomTheme }>`
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    user-select: none;
   }
 
   .courses-pad {
@@ -36,6 +36,7 @@ export const StyledFooter = styled.footer<{ theme: CustomTheme }>`
 export const LogoImageFooter = styled.img`
   height: 6rem;
   width: auto;
+  user-select: none;
   pointer-events: none;
 `;
 
@@ -46,7 +47,7 @@ export const Social = styled.div`
   .icon {
     height: 1.8rem;
     width: auto;
-    margin-right: -0.8rem;
+    margin-right: 0.5rem;
   }
 
   ul li {
@@ -60,6 +61,7 @@ export const Social = styled.div`
   address {
     line-height: 1rem;
     margin-top: 1.5rem;
+    user-select: auto;
   }
 `;
 
@@ -69,11 +71,12 @@ export const Copy = styled.div`
 `;
 
 export const By = styled.small`
-  color: rgba(128, 128, 128, 0.5);
+  color: rgba(128, 128, 128, 0.2);
+  user-select: none;
 `;
 
 export const ByLink = styled.a<{ theme: CustomTheme }>`
-  color: rgba(128, 128, 128, 0.5);
+  color: rgba(128, 128, 128, 0.2);
   padding: 0;
   margin: 0;
   transition: all 0.2s ease-in-out;

@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 import { CustomTheme } from "../types/themeTypes";
 
-export const FormContainer = styled.form<{ theme: CustomTheme }>`
-  user-select: none;
+export const FormContainerLogin = styled.form<{ theme: CustomTheme }>`
+user-select: none;
   background-color: ${(props) =>
     props.theme.mode === "light"
       ? "var(--secondary-white)"
@@ -11,7 +11,8 @@ export const FormContainer = styled.form<{ theme: CustomTheme }>`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0 1rem;
-  width: 31rem;
+  width: 80%;
+  margin: 2rem 0 5rem 0;
   padding: 1.5rem 2rem;
   border-radius: 12px;
   box-shadow: ${(props) =>
@@ -24,14 +25,13 @@ export const FormContainer = styled.form<{ theme: CustomTheme }>`
   }
 
   .div-1,
-  .div-4,
-  .div-7 {
+  .div-2 {
     grid-column-start: 1;
     grid-column-end: 3;
   }
 `;
 
-export const FormInput = styled.input<{ theme: CustomTheme }>`
+export const FormInputLogin = styled.input<{ theme: CustomTheme }>`
   margin: 0.2rem 0;
   font-size: 0.9rem;
   width: 100%;
@@ -53,30 +53,7 @@ export const FormInput = styled.input<{ theme: CustomTheme }>`
   }
 `;
 
-export const FormSelect = styled.select<{ theme: CustomTheme }>`
-  padding: 0 0.3rem !important;
-  margin: 0.2rem 0;
-  font-size: 0.9rem;
-  width: 100%;
-  height: 2rem;
-  padding: 0.5rem;
-  border: solid 1.5px var(--light-green);
-  background-color: var(--secondary-white);
-  color: var(--primary-black);
-
-  &:focus {
-    box-shadow: ${(props) =>
-      props.theme.mode === "light"
-        ? "0 0 15px var(--light-green)"
-        : "0 0 5px var(--primary-black)"};
-    outline: ${(props) =>
-      props.theme.mode === "light"
-        ? "0 0 15px var(--light-green)"
-        : "0 0 5px var(--primary-black)"};
-  }
-`;
-
-export const FormButton = styled.button<{ theme: CustomTheme }>`
+export const FormButtonLogin = styled.button<{ theme: CustomTheme }>`
   grid-column-start: 1;
   grid-column-end: 3;
   cursor: pointer;

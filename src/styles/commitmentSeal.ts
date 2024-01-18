@@ -7,7 +7,6 @@ export const SealArticle = styled.article<{ theme: CustomTheme }>`
   background-color: #00ff83;
   padding: 0.5rem;
   margin-top: 1.5rem;
-  user-select: none;
   color: ${(props) =>
     props.theme.mode === "light"
       ? "var(--primary-black)"
@@ -27,14 +26,15 @@ export const SealArticle = styled.article<{ theme: CustomTheme }>`
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-  }
 
-  .article-commitment p {
-    font-size: 1.2rem;
+    p {
+      font-size: 1.2rem;
+    }
   }
 `;
 
 export const Stamp = styled.img`
+  user-select: none;
   height: 4.5rem;
   width: auto;
   margin-right: 0.5rem;

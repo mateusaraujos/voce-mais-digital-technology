@@ -10,7 +10,6 @@ export const SectionTwo = styled.section<{ theme: CustomTheme }>`
   width: 100%;
   color: var(--primary-white);
   padding: ${(props) => (props.theme.mode === "light" ? "2.5rem 0" : "0")};
-  user-select: none;
 `;
 
 export const SectionTwoTitle = styled.h2`
@@ -41,6 +40,7 @@ export const VideoSize = styled.div`
   width: 30rem;
 
   .video {
+    user-select: none;
     width: 100%;
     height: auto;
   }

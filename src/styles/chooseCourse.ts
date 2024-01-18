@@ -6,7 +6,6 @@ import { CustomTheme } from "../types/themeTypes";
 export const SectionOne = styled.section<{ theme: CustomTheme }>`
   width: 100%;
   padding: 2.5rem 0 3.5rem 0;
-  user-select: none;
   color: ${(props) =>
     props.theme.mode === "light"
       ? "var(--primary-black)"
@@ -36,6 +35,7 @@ export const SectionCourses = styled.div`
     flex-wrap: wrap;
 
     .img-examples {
+      user-select: none;
       width: 16rem;
       height: auto;
       margin: 0.3rem;
@@ -56,6 +56,7 @@ export const ToCoursesDiv = styled.div`
 `;
 
 export const LinkCatalog = styled(Link)<{ theme: CustomTheme }>`
+  user-select: none;
   background-color: ${(props) =>
     props.theme.mode === "light" ? "var(--dark-green)" : "var(--light-green)"};
   color: ${(props) =>

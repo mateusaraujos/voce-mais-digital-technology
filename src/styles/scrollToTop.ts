@@ -25,6 +25,7 @@ export const ScrollUpButton = styled.button`
   &:hover {
     background-color: ${(props) =>
       props.theme.mode === "light" ? "lightgrey" : "var(--secondary-black)"};
+  }
 
   /* Celular */
   @media (max-width: 414px), (max-width: 896px) {
