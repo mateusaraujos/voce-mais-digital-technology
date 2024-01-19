@@ -71,8 +71,10 @@ export const Copy = styled.div`
 `;
 
 export const By = styled.small`
+  display: none;
   color: rgba(128, 128, 128, 0.2);
   user-select: none;
+  font-size: 0.5rem;
 `;
 
 export const ByLink = styled.a<{ theme: CustomTheme }>`
@@ -81,17 +83,10 @@ export const ByLink = styled.a<{ theme: CustomTheme }>`
   margin: 0;
   transition: all 0.2s ease-in-out;
 
-  &:hover {
-    color: ${(props) =>
-      props.theme.mode === "light"
-        ? "var(--primary-black)"
-        : "var(--primary-white)"};
-  }
-
   &::before {
     background-color: ${(props) =>
       props.theme.mode === "light"
         ? "var(--primary-black)"
-        : "var(--primary-white)"};
+        : "var(--secondary-black)"};
   }
 `;
