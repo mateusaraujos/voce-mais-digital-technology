@@ -1,4 +1,5 @@
 import { ChangeEvent, FormEvent, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import { useTheme } from "../../hooks/useTheme";
 import { FormValue } from "../../types/appTypes";
@@ -11,18 +12,26 @@ import {
 
 export default function LoginForm() {
   const { theme } = useTheme();
+  const navigate = useNavigate();
   const [formValues, setFormValues] = useState<FormValue>({});
 
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
-    // Lógica para lidar com os dados do formulário
-    // Enviá-los para um servidor
-    console.log("Valores do formulário: ", formValues); // Teste valores
+
+    console.log("Valores do formulário: ", formValues);
+
+    if (formValues.email === "dev@gmail.com") {
+      navigate("/dev");
+    } else if (formValues.email === "adm@gmail.com") {
+      navigate("/admin");
+    } else if (formValues.email === "professor@gmail.com") {
+      navigate("/teacher");
+    } else if (formValues.email === "aluno@gmail.com") {
+      navigate("/student");
+    }
   };
 
-  const handleInputChange = (
-    event: ChangeEvent<HTMLInputElement | HTMLSelectElement>
-  ) => {
+  const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
     setFormValues((prevValue) => ({
       ...prevValue,
