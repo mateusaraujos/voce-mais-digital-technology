@@ -52,10 +52,20 @@ export default function LoginForm() {
             onChange={handleInputChange}
             autoComplete="on"
             required={field.required}
+            autoFocus={field.type === "email"}
+            tabIndex={
+              field.type === "email"
+                ? 2
+                : field.type === "password"
+                ? 3
+                : undefined
+            }
           />
         </div>
       ))}
-      <FormButtonLogin type="submit">Entrar</FormButtonLogin>
+      <FormButtonLogin type="submit" tabIndex={4}>
+        Entrar
+      </FormButtonLogin>
     </FormContainerLogin>
   );
 }

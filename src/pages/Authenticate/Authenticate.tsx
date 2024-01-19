@@ -21,7 +21,7 @@ export default function Authenticate() {
 
       <MainAuthenticate>
         <Presentation>
-          <LogoLink className="logo-link" href="/">
+          <LogoLink tabIndex={1} className="logo-link" href="/">
             <LogoImage
               className="imgLogo"
               src={theme.mode === "light" ? imgLogo : imgDarkLogo}
