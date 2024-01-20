@@ -48,6 +48,14 @@ export default function ThemeProvider() {
   // Modifica <head> dinamicamente
   useDynamicHead(faviconStyle, themeColor);
 
+  useEffect(() => {
+    // Modifica os estilos do elemento <html> conforme o tema
+    document.documentElement.style.backgroundColor =
+      theme.mode === "light" ? "var(--primary-white)" : "var(--primary-black)";
+    document.documentElement.style.color =
+      theme.mode === "light" ? "var(--primary-black)" : "var(--primary-white)";
+  }, [theme]);
+
   return (
     <StyledComponentsThemeProvider theme={theme}>
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
