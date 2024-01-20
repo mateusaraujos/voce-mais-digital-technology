@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter } from "react-router-dom";
 
 import AppRouter from "./routes/AppRouter";
 import { useTheme } from "./hooks/useTheme";
@@ -31,9 +30,5 @@ export default function App() {
     );
   }
 
-  return (
-    <BrowserRouter>
-      <AppRouter />
-    </BrowserRouter>
-  );
+  return <AppRouter />;
 }
