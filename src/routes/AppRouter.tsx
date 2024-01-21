@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import Home from "../pages/Home/Home";
 import NotFound from "../pages/NotFound/NotFound";
@@ -18,18 +18,18 @@ export default function AppRouter() {
           <Route path="/" element={<Home />} />
           <Route path="/authenticate" element={<Authenticate />} />
 
-          <PrivateRoute path="/dev">
-            <DevPage />
-          </PrivateRoute>
-          <PrivateRoute path="/admin">
-            <AdminPage />
-          </PrivateRoute>
-          <PrivateRoute path="/teacher">
-            <TeacherPage />
-          </PrivateRoute>
-          <PrivateRoute path="/student">
-            <StudentPage />
-          </PrivateRoute>
+          <Route path="/dev" element={<PrivateRoute />}>
+            <Route index element={<DevPage />} />
+          </Route>
+          <Route path="/admin" element={<PrivateRoute />}>
+            <Route index element={<AdminPage />} />
+          </Route>
+          <Route path="/teacher" element={<PrivateRoute />}>
+            <Route index element={<TeacherPage />} />
+          </Route>
+          <Route path="/student" element={<PrivateRoute />}>
+            <Route index element={<StudentPage />} />
+          </Route>
 
           <Route path="*" element={<NotFound />} />
         </Routes>
