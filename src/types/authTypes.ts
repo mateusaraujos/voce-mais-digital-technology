@@ -9,8 +9,3 @@ export interface AuthContextProps {
 export interface AuthProviderProps {
   children: ReactNode;
 }
-
-export interface PrivateRouteProps {
-  path: string;
-  children: React.ReactNode;
-}

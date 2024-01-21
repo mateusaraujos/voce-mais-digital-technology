@@ -9,25 +9,48 @@ import {
   FormContainerLogin,
   FormInputLogin,
 } from "../../styles/loginForm";
+import { useAuth } from "../../hooks/useAuth";
 
 export default function LoginForm() {
+  const { login, logout } = useAuth();
   const { theme } = useTheme();
   const navigate = useNavigate();
   const [formValues, setFormValues] = useState<FormValue>({});
 
-  const handleSubmit = (event: FormEvent) => {
+  const handleLogin = (event: FormEvent) => {
     event.preventDefault();
 
     console.log("Valores do formulário: ", formValues);
 
+    // Teste de login e logout.
     if (formValues.email === "dev@gmail.com") {
+      login();
       navigate("/dev");
+
+      setTimeout(() => {
+        logout();
+      }, 5000);
     } else if (formValues.email === "adm@gmail.com") {
+      login();
       navigate("/admin");
+
+      setTimeout(() => {
+        logout();
+      }, 5000);
     } else if (formValues.email === "professor@gmail.com") {
+      login();
       navigate("/teacher");
+
+      setTimeout(() => {
+        logout();
+      }, 5000);
     } else if (formValues.email === "aluno@gmail.com") {
+      login();
       navigate("/student");
+
+      setTimeout(() => {
+        logout();
+      }, 5000);
     }
   };
 
@@ -40,7 +63,7 @@ export default function LoginForm() {
   };
 
   return (
-    <FormContainerLogin theme={theme} onSubmit={handleSubmit}>
+    <FormContainerLogin theme={theme} onSubmit={handleLogin}>
       {LOGIN_FORM.map((field, index) => (
         <div
           className={`login-element ${
