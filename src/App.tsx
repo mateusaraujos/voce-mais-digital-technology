@@ -9,15 +9,15 @@ import darkInitialLogo from "../src/assets/images/dark-logo-inicial.png";
 
 export default function App() {
   const { theme } = useTheme();
-  const [carregando, setCarregando] = useState(true);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
-      setCarregando(false);
-    }, 1500);
+      setLoading(false);
+    }, 1000);
   }, []);
 
-  if (carregando) {
+  if (loading) {
     return (
       <HomeScreen className="position-fixed">
         <InitialLogo
