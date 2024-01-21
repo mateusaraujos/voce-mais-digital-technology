@@ -39,6 +39,7 @@ html {
   --dark-green: #3fa63b;
   --light-green: #00ff83;
   --primary-white: #edebe7;
+  --primary-white-transparent: rgba(237, 235, 231, 0);
   --secondary-white: #fff;
   --primary-orange: #ff5211;
   --primary-black: #0d0d0d;

@@ -9,7 +9,7 @@ export const DotsContainer = styled.div<{ theme: CustomTheme }>`
   z-index: 2;
 `;
 
-export const ListDots = styled.ul`
+export const ListDots = styled.ul<{ theme: CustomTheme }>`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,21 +29,30 @@ export const ListDots = styled.ul`
     font-size: 0 !important;
     margin: 0;
     padding: 0;
-    border: 2px solid #edebe7;
+    border: ${(props) =>
+      props.theme.mode === "light"
+        ? "2px solid var(--primary-white)"
+        : "2px solid var(--primary-black)"};
     cursor: pointer;
     border-radius: 50%;
     width: 0.8rem;
     height: 0.8rem;
     transition: all 0.6s ease-in-out;
-    background-color: #edebe700;
+    background-color: var(--primary-white-transparent);
   }
 
   li button:focus {
-    outline: 1px solid #edebe7;
+    outline: ${(props) =>
+      props.theme.mode === "light"
+        ? "1px solid var(--primary-black)"
+        : "1px solid var(--primary-white)"};
   }
 
   .slick-active button {
-    background-color: #edebe7;
+    background-color: ${(props) =>
+      props.theme.mode === "light"
+        ? "var(--primary-white)"
+        : "var(--primary-black)"};
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.8);
   }
 `;
