@@ -1,21 +1,34 @@
+import { Helmet } from "react-helmet";
+
 import ThemeToggle from "../../components/ThemeToogle/ThemeToogle";
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 import LoginForm from "../../components/LoginForm/LoginForm";
 import { useTheme } from "../../hooks/useTheme";
 import { LogoImage, LogoLink } from "../../styles/header";
-
-import imgLogo from "../../assets/images/logo.png";
-import imgDarkLogo from "../../assets/images/darkLogo.png";
 import {
   LoginSection,
   MainAuthenticate,
   Presentation,
 } from "../../styles/authenticate";
 
+import imgLogo from "../../assets/images/logo.png";
+import imgDarkLogo from "../../assets/images/darkLogo.png";
+
 export default function Authenticate() {
   const { theme } = useTheme();
   return (
     <>
+      <Helmet>
+        <title>Faça login para ter acesso a sua conta | Você+Digital</title>
+
+        <meta
+          name="description"
+          content="Página de login para usuários cadastrados"
+        />
+
+        <meta name="keywords" content="Login, Frase, React, TypeScript" />
+      </Helmet>
+
       <ThemeToggle />
       <ScrollToTop />
 
