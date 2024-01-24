@@ -15,7 +15,10 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Você + Digital</title>
+        <title>
+          Aprenda, Explore e Evolua com cursos especializados na educação
+          tecnológica | Você+Digital
+        </title>
 
         <meta name="description" content="Página inicial da Você + Digital" />
 
