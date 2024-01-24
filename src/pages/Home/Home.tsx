@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet";
+
 import ThemeToggle from "../../components/ThemeToogle/ThemeToogle";
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 import Header from "../../components/Header/Header";
@@ -12,6 +14,17 @@ import { BANNERS } from "../../constants/appConstants";
 export default function Home() {
   return (
     <>
+      <Helmet>
+        <title>Você + Digital</title>
+
+        <meta name="description" content="Página inicial da Você + Digital" />
+
+        <meta
+          name="keywords"
+          content="Home, Carrossel, Sessões, React, TypeScript"
+        />
+      </Helmet>
+
       <ThemeToggle />
       <ScrollToTop />
 
